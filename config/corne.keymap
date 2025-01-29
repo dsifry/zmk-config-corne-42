@@ -75,7 +75,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
+            key-positions = <13 1>;
         };
 
         delete {
@@ -172,11 +172,6 @@
             bindings = <&kp K_CUT>;
             key-positions = <27 25>;
         };
-
-        LayerCombo {
-            bindings = <&mo 3>;
-            key-positions = <38 39>;
-        };
     };
 
     //
@@ -194,10 +189,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R           &kp T              &kp Y        &kp U      &kp I              &kp O    &kp P     &kp BACKSPACE
-&kp LSHFT  &kp A  &kp S  &kp D     &kp F           &kp G              &kp H        &kp J      &kp K              &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V           &kp B              &kp N        &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LGUI  &kp LEFT_SHIFT  &lt 1 BACKSPACE    &lt 2 ENTER  &kp SPACE  &mt RIGHT_ALT TAB
+&kp TAB    &kp Q  &kp W  &kp E  &kp R           &kp T           &kp Y        &kp U      &kp I              &kp O    &kp P     &kp BACKSPACE
+&kp LSHFT  &kp A  &kp S  &kp D  &kp F           &kp G           &kp H        &kp J      &kp K              &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C  &kp V           &kp B           &kp N        &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp RSHFT
+                         &mo 1  &kp LEFT_SHIFT  &kp LEFT_GUI    &lt 2 ENTER  &kp SPACE  &mt RIGHT_ALT TAB
             >;
         };
 

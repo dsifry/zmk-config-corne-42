@@ -172,6 +172,11 @@
             bindings = <&kp K_CUT>;
             key-positions = <27 25>;
         };
+
+        LayerCombo {
+            bindings = <&mo 3>;
+            key-positions = <38 39>;
+        };
     };
 
     //

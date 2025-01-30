@@ -209,10 +209,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans      &kp N1  &kp N2    &kp N3        &kp N4           &kp N5           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&caps_word  &trans  &trans    &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp N0  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans      &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                              &trans        &trans           &trans           &trans  &trans  &trans
+&trans      &kp N1  &kp N2    &kp N3        &kp N4           &kp N5           &kp N6      &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&caps_word  &trans  &trans    &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp N0      &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans      &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp PERIOD  &kp N1  &kp N2  &kp N3  &trans  &trans
+                              &trans        &trans           &trans           &trans      &trans  &trans
             >;
         };
 

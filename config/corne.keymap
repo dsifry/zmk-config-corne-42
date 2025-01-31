@@ -27,71 +27,7 @@
             quick-tap-ms = <180>;
             global-quick-tap;
         };
-
-        hm_lctrl: hold_tap_lctrl {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "balanced";
-            bindings = <&mm LCTRL>, <&kp A>;
-        };
-
-        hm_lalt: hold_tap_lalt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "balanced";
-            bindings = <&mm LALT>, <&kp S>;
-        };
-
-        hm_lgui: hold_tap_lgui {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "balanced";
-            bindings = <&mm LGUI>, <&kp D>;
-        };
-
-        hm_lshift: hold_tap_lshift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "balanced";
-            bindings = <&mm LSHFT>, <&kp F>;
-        };
-
-        hm_rshift: hold_tap_rshift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "balanced";
-            bindings = <&mm RSHFT>, <&kp J>;
-        };
-
-        hm_rgui: hold_tap_rgui {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "balanced";
-            bindings = <&mm RGUI>, <&kp K>;
-        };
-
-        hm_ralt: hold_tap_ralt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "balanced";
-            bindings = <&mm RALT>, <&kp L>;
-        };
-
-        hm_rctrl: hold_tap_rctrl {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            flavor = "balanced";
-            bindings = <&mm RCTRL>, <&kp SEMI>;
-        };
-
+        
         para: para {
             compatible = "zmk,behavior-tap-dance";
             label = "PARA";

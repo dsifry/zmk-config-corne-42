@@ -117,12 +117,12 @@
         };
 
         copy {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp C_AC_COPY>;
             key-positions = <27 26>;
         };
 
         paste {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp C_AC_PASTE>;
             key-positions = <27 28>;
         };
 
@@ -171,9 +171,24 @@
             key-positions = <20 21>;
         };
 
-        cut {
-            bindings = <&kp K_CUT>;
+        Cut {
+            bindings = <&kp C_AC_CUT>;
             key-positions = <27 25>;
+        };
+
+        Question {
+            bindings = <&kp QUESTION>;
+            key-positions = <5 4>;
+        };
+
+        Exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <16 17>;
+        };
+
+        Minus {
+            bindings = <&kp MINUS>;
+            key-positions = <28 29>;
         };
     };
 
@@ -192,10 +207,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R                     &kp T                         &kp Y         &kp U                    &kp I              &kp O    &kp P     &kp BACKSPACE
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F                     &kp G                         &kp H         &kp J                    &kp K              &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V                     &kp B                         &kp N         &kp M                    &kp COMMA          &kp DOT  &kp FSLH  &kp RSHFT
-                              &lt 2 ESCAPE  &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI LA(BACKSPACE)    &lt 1 RETURN  &mt RIGHT_CONTROL SPACE  &mt RIGHT_ALT TAB
+&kp TAB         &kp Q        &kp W           &kp E           &kp R                     &kp T                         &kp Y         &kp U                    &kp I              &kp O            &kp P           &kp BACKSPACE
+&kp LEFT_SHIFT  &hm LCTRL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &hm LEFT_GUI F            &kp G                         &kp H         &hm RIGHT_SHIFT J        &hm RIGHT_GUI K    &hm RIGHT_ALT L  &hm RCTRL SEMI  &kp SQT
+&kp LCTRL       &kp Z        &kp X           &kp C           &kp V                     &kp B                         &kp N         &kp M                    &kp COMMA          &kp DOT          &kp FSLH        &kp RSHFT
+                                             &lt 2 ESCAPE    &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI LA(BACKSPACE)    &lt 1 RETURN  &mt RIGHT_CONTROL SPACE  &mt RIGHT_ALT TAB
             >;
         };
 
@@ -249,15 +264,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &bootloader  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };

@@ -15,6 +15,19 @@
     behaviors {
         // Left-hand homerow mods
 
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <180>;
+            global-quick-tap;
+        };
+
         hm_lctrl: hold_tap_lctrl {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;

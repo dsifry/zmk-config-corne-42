@@ -2,6 +2,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define NAV 1
@@ -12,69 +14,70 @@
 / {
     behaviors {
         // Left-hand homerow mods
+
         hm_lctrl: hold_tap_lctrl {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <280>;
-    flavor = "balanced";
-    bindings = <&mm LCTRL>, <&kp A>;
-};
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm LCTRL>, <&kp A>;
+        };
 
-hm_lalt: hold_tap_lalt {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <280>;
-    flavor = "balanced";
-    bindings = <&mm LALT>, <&kp S>;
-};
+        hm_lalt: hold_tap_lalt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm LALT>, <&kp S>;
+        };
 
-hm_lgui: hold_tap_lgui {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <280>;
-    flavor = "balanced";
-    bindings = <&mm LGUI>, <&kp D>;
-};
+        hm_lgui: hold_tap_lgui {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm LGUI>, <&kp D>;
+        };
 
-hm_lshift: hold_tap_lshift {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <280>;
-    flavor = "balanced";
-    bindings = <&mm LSHFT>, <&kp F>;
-};
+        hm_lshift: hold_tap_lshift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm LSHFT>, <&kp F>;
+        };
 
-hm_rshift: hold_tap_rshift {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <280>;
-    flavor = "balanced";
-    bindings = <&mm RSHFT>, <&kp J>;
-};
+        hm_rshift: hold_tap_rshift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm RSHFT>, <&kp J>;
+        };
 
-hm_rgui: hold_tap_rgui {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <280>;
-    flavor = "balanced";
-    bindings = <&mm RGUI>, <&kp K>;
-};
+        hm_rgui: hold_tap_rgui {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm RGUI>, <&kp K>;
+        };
 
-hm_ralt: hold_tap_ralt {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <280>;
-    flavor = "balanced";
-    bindings = <&mm RALT>, <&kp L>;
-};
+        hm_ralt: hold_tap_ralt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm RALT>, <&kp L>;
+        };
 
-hm_rctrl: hold_tap_rctrl {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <280>;
-    flavor = "balanced";
-    bindings = <&mm RCTRL>, <&kp SEMI>;
-};
+        hm_rctrl: hold_tap_rctrl {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm RCTRL>, <&kp SEMI>;
+        };
 
         para: para {
             compatible = "zmk,behavior-tap-dance";
@@ -94,6 +97,7 @@ hm_rctrl: hold_tap_rctrl {
             compatible = "zmk,behavior-mod-morph";
             label = "PARALESS";
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
@@ -102,12 +106,13 @@ hm_rctrl: hold_tap_rctrl {
             compatible = "zmk,behavior-mod-morph";
             label = "PARAGREAT";
             bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
     };
 
-     macros {
+    macros {
         browsertab: browsertab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -125,55 +130,218 @@ hm_rctrl: hold_tap_rctrl {
         compatible = "zmk,combos";
 
         // Left-hand modifier combos
-        ctrl { bindings = <&mm LCTRL>; key-positions = <0>; };
-        alt { bindings = <&mm LALT>; key-positions = <1>; };
-        gui { bindings = <&mm LGUI>; key-positions = <2>; };
-        shift { bindings = <&mm LSHFT>; key-positions = <3>; };
 
-        ctrl_alt { bindings = <&mm LCTRL LALT>; key-positions = <0 1>; };
-        ctrl_gui { bindings = <&mm LCTRL LGUI>; key-positions = <0 2>; };
-        ctrl_shift { bindings = <&mm LCTRL LSHFT>; key-positions = <0 3>; };
-        alt_gui { bindings = <&mm LALT LGUI>; key-positions = <1 2>; };
-        alt_shift { bindings = <&mm LALT LSHFT>; key-positions = <1 3>; };
-        gui_shift { bindings = <&mm LGUI LSHFT>; key-positions = <2 3>; };
+        ctrl {
+            bindings = <&mm LCTRL>;
+            key-positions = <13>;
+        };
 
-        ctrl_alt_gui { bindings = <&mm LCTRL LALT LGUI>; key-positions = <0 1 2>; };
-        ctrl_alt_shift { bindings = <&mm LCTRL LALT LSHFT>; key-positions = <0 1 3>; };
-        ctrl_gui_shift { bindings = <&mm LCTRL LGUI LSHFT>; key-positions = <0 2 3>; };
-        alt_gui_shift { bindings = <&mm LALT LGUI LSHFT>; key-positions = <1 2 3>; };
+        alt {
+            bindings = <&mm LALT>;
+            key-positions = <14>;
+        };
+
+        gui {
+            bindings = <&mm LGUI>;
+            key-positions = <15>;
+        };
+
+        shift {
+            bindings = <&mm LSHFT>;
+            key-positions = <16>;
+        };
+
+        ctrl_alt {
+            bindings = <&mm LCTRL LALT>;
+            key-positions = <13 14>;
+        };
+
+        ctrl_gui {
+            bindings = <&mm LCTRL LGUI>;
+            key-positions = <13 15>;
+        };
+
+        ctrl_shift {
+            bindings = <&mm LCTRL LSHFT>;
+            key-positions = <13 16>;
+        };
+
+        alt_gui {
+            bindings = <&mm LALT LGUI>;
+            key-positions = <14 15>;
+        };
+
+        alt_shift {
+            bindings = <&mm LALT LSHFT>;
+            key-positions = <14 16>;
+        };
+
+        gui_shift {
+            bindings = <&mm LGUI LSHFT>;
+            key-positions = <15 16>;
+        };
+
+        ctrl_alt_gui {
+            bindings = <&mm LCTRL LALT LGUI>;
+            key-positions = <13 14 15>;
+        };
+
+        ctrl_alt_shift {
+            bindings = <&mm LCTRL LALT LSHFT>;
+            key-positions = <13 14 16>;
+        };
+
+        ctrl_gui_shift {
+            bindings = <&mm LCTRL LGUI LSHFT>;
+            key-positions = <13 15 16>;
+        };
+
+        alt_gui_shift {
+            bindings = <&mm LALT LGUI LSHFT>;
+            key-positions = <14 15 16>;
+        };
 
         // Right-hand modifier combos
-        r_ctrl { bindings = <&mm RCTRL>; key-positions = <4>; };
-        r_alt { bindings = <&mm RALT>; key-positions = <5>; };
-        r_gui { bindings = <&mm RGUI>; key-positions = <6>; };
-        r_shift { bindings = <&mm RSHFT>; key-positions = <7>; };
 
-        r_ctrl_alt { bindings = <&mm RCTRL RALT>; key-positions = <4 5>; };
-        r_ctrl_gui { bindings = <&mm RCTRL RGUI>; key-positions = <4 6>; };
-        r_ctrl_shift { bindings = <&mm RCTRL RSHFT>; key-positions = <4 7>; };
-        r_alt_gui { bindings = <&mm RALT RGUI>; key-positions = <5 6>; };
-        r_alt_shift { bindings = <&mm RALT RSHFT>; key-positions = <5 7>; };
-        r_gui_shift { bindings = <&mm RGUI RSHFT>; key-positions = <6 7>; };
+        r_ctrl {
+            bindings = <&mm RCTRL>;
+            key-positions = <22>;
+        };
 
-        ctrl_alt_gui_shift { bindings = <&mm LCTRL LALT LGUI LSHFT>; key-positions = <0 1 2 3>; };
-        r_ctrl_alt_gui_shift { bindings = <&mm RCTRL RALT RGUI RSHFT>; key-positions = <4 5 6 7>; };
+        r_alt {
+            bindings = <&mm RALT>;
+            key-positions = <21>;
+        };
 
-        escape { bindings = <&kp ESCAPE>; key-positions = <13 1>; };
-        delete { bindings = <&kp DELETE>; key-positions = <15 21>; };
-        perc { bindings = <&kp PERCENT>; key-positions = <5 17>; };
-        equal { bindings = <&kp EQUAL>; key-positions = <28 16>; };
-        dollar { bindings = <&kp DOLLAR>; key-positions = <4 16>; };
-        pound { bindings = <&kp POUND>; key-positions = <3 15>; };
-        at { bindings = <&kp AT>; key-positions = <2 14>; };
-        mybackslash { bindings = <&kp BACKSLASH>; key-positions = <26 14>; };
-        cut { bindings = <&kp C_AC_CUT>; key-positions = <27 25>; };
-        copy { bindings = <&kp C_AC_COPY>; key-positions = <27 26>; };
-        paste { bindings = <&kp C_AC_PASTE>; key-positions = <27 28>; };
-        para-less { bindings = <&paraless>; key-positions = <20 19>; };
-        para-great { bindings = <&paragreat>; key-positions = <20 21>; };
-        myquestion { bindings = <&kp QUESTION>; key-positions = <5 4>; };
-        myexclamation { bindings = <&kp EXCLAMATION>; key-positions = <16 17>; };
-        myminus { bindings = <&kp MINUS>; key-positions = <28 29>; };
+        r_gui {
+            bindings = <&mm RGUI>;
+            key-positions = <20>;
+        };
+
+        r_shift {
+            bindings = <&mm RSHFT>;
+            key-positions = <19>;
+        };
+
+        r_ctrl_alt {
+            bindings = <&mm RCTRL RALT>;
+            key-positions = <22 21>;
+        };
+
+        r_ctrl_gui {
+            bindings = <&mm RCTRL RGUI>;
+            key-positions = <22 20>;
+        };
+
+        r_ctrl_shift {
+            bindings = <&mm RCTRL RSHFT>;
+            key-positions = <22 19>;
+        };
+
+        r_alt_gui {
+            bindings = <&mm RALT RGUI>;
+            key-positions = <21 20>;
+        };
+
+        r_alt_shift {
+            bindings = <&mm RALT RSHFT>;
+            key-positions = <21 19>;
+        };
+
+        r_gui_shift {
+            bindings = <&mm RGUI RSHFT>;
+            key-positions = <20 19>;
+        };
+
+        ctrl_alt_gui_shift {
+            bindings = <&mm LCTRL LALT LGUI LSHFT>;
+            key-positions = <13 14 15 16>;
+        };
+
+        r_ctrl_alt_gui_shift {
+            bindings = <&mm RCTRL RALT RGUI RSHFT>;
+            key-positions = <19 20 21 22>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 1>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <10 11>;
+        };
+
+        perc {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 17>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <28 16>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 16>;
+        };
+
+        pound {
+            bindings = <&kp POUND>;
+            key-positions = <3 15>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <2 14>;
+        };
+
+        mybackslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <26 14>;
+        };
+
+        cut {
+            bindings = <&kp C_AC_CUT>;
+            key-positions = <27 25>;
+        };
+
+        copy {
+            bindings = <&kp C_AC_COPY>;
+            key-positions = <27 26>;
+        };
+
+        paste {
+            bindings = <&kp C_AC_PASTE>;
+            key-positions = <27 28>;
+        };
+
+        para-less {
+            bindings = <&paraless>;
+            key-positions = <20 19>;
+        };
+
+        para-great {
+            bindings = <&paragreat>;
+            key-positions = <20 21>;
+        };
+
+        myquestion {
+            bindings = <&kp QUESTION>;
+            key-positions = <5 4>;
+        };
+
+        myexclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <16 17>;
+        };
+
+        myminus {
+            bindings = <&kp MINUS>;
+            key-positions = <28 29>;
+        };
     };
 
     keymap {
@@ -181,18 +349,16 @@ hm_rctrl: hold_tap_rctrl {
 
         DEF {
             display-name = "Base";
-
             bindings = <
-                &kp TAB       &kp Q        &kp W         &kp E         &kp R         &kp T         &kp Y         &kp U         &kp I         &kp O         &kp P         &kp BACKSPACE
-                &hm_lctrl     &hm_lalt     &hm_lgui      &hm_lshift    &kp G         &kp H         &hm_rshift    &hm_rgui      &hm_ralt      &hm_rctrl     &kp SEMI      &kp SQT
-                &kp LCTRL     &kp Z        &kp X         &kp C         &kp V         &kp B         &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH     &kp RSHFT
-                                  &lt 2 ESCAPE    &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI LA(BACKSPACE)    &lt 1 RETURN  &mt RIGHT_CONTROL SPACE  &mt RIGHT_ALT TAB
+&kp TAB    &kp Q     &kp W     &kp E         &kp R                     &kp T                         &kp Y         &kp U                    &kp I              &kp O      &kp P      &kp BACKSPACE
+&hm_lctrl  &hm_lalt  &hm_lgui  &hm_lshift    &kp G                     &kp H                         &hm_rshift    &hm_rgui                 &hm_ralt           &hm_rctrl  &kp SEMI   &kp SQT
+&kp LCTRL  &kp Z     &kp X     &kp C         &kp V                     &kp B                         &kp N         &kp M                    &kp COMMA          &kp DOT    &kp SLASH  &kp RSHFT
+                               &lt 2 ESCAPE  &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI LA(BACKSPACE)    &lt 1 RETURN  &mt RIGHT_CONTROL SPACE  &mt RIGHT_ALT TAB
             >;
         };
 
         NAV {
             display-name = "NavNum";
-
             bindings = <
 &trans      &kp N1  &kp N2    &kp N3        &kp N4           &kp N5           &kp N6      &kp N7  &kp N8  &kp N9  &kp N0  &trans
 &caps_word  &trans  &trans    &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp N0      &kp N4  &kp N5  &kp N6  &trans  &trans
@@ -203,7 +369,6 @@ hm_rctrl: hold_tap_rctrl {
 
         SYM {
             display-name = "Symbols";
-
             bindings = <
 &trans  &kp EXCL  &kp AT          &kp HASH        &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RPAR  &trans
 &trans  &trans    &trans          &kp UP_ARROW    &trans           &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT              &kp BSLH  &trans

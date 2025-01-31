@@ -349,12 +349,94 @@
 
         DEF {
             display-name = "Base";
-            bindings = <
-&kp TAB    &kp Q     &kp W     &kp E         &kp R                     &kp T                         &kp Y         &kp U                    &kp I              &kp O      &kp P      &kp BACKSPACE
-&hm_lctrl  &hm_lalt  &hm_lgui  &hm_lshift    &kp G                     &kp H                         &hm_rshift    &hm_rgui                 &hm_ralt           &hm_rctrl  &kp SEMI   &kp SQT
-&kp LCTRL  &kp Z     &kp X     &kp C         &kp V                     &kp B                         &kp N         &kp M                    &kp COMMA          &kp DOT    &kp SLASH  &kp RSHFT
-                               &lt 2 ESCAPE  &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI LA(BACKSPACE)    &lt 1 RETURN  &mt RIGHT_CONTROL SPACE  &mt RIGHT_ALT TAB
-            >;
+            bindings =
+                <
+&kp TAB         &kp Q                                                                                                                                                                   &kp W                                                                                                                                                                 &kp E                                                                                                                                                                  &kp R                                                                                                                                                                    &kp T                         &kp Y         &kp U                                                                                                                                                                    &kp I                                                                                                                                                                  &kp O                                                                                                                                                                 &kp P                                                                                                                                                                          &kp BACKSPACE
+&kp LEFT_SHIFT  &hm_lctrl compatible =,
+                "zmk,behavior-hold-tap";
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm LCTRL>, <&kp A>;
+
+            A
+
+            &hm_lalt compatible = "
+
+            zmk,behavior-hold-tap = ";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm LALT>, <&kp S>;
+
+            S
+
+            &hm_lgui  compatible = "
+
+            zmk,behavior-hold-tap = ";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm LGUI>, <&kp D>;
+
+            D
+
+            &hm_lshift compatible = "
+
+            zmk,behavior-hold-tap = ";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm LSHFT>, <&kp F>;
+
+            F
+
+            &kp G                         &kp H         &hm_rshift compatible = "
+
+            zmk,behavior-hold-tap = ";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm RSHFT>, <&kp J>;
+
+            J
+
+            &hm_rgui  compatible = "
+
+            zmk,behavior-hold-tap = ";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm RGUI>, <&kp K>;
+
+            K
+
+            &hm_ralt compatible = "
+
+            zmk,behavior-hold-tap = ";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm RALT>, <&kp L>;
+
+            L
+
+            &hm_rctrl  compatible = "
+
+            zmk,behavior-hold-tap = ";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&mm RCTRL>, <&kp SEMI>;
+
+            SEMI
+
+            &kp SQT
+&kp LCTRL       &kp Z                                                                                                                                                                   &kp X                                                                                                                                                                 &kp C                                                                                                                                                                  &kp V                                                                                                                                                                    &kp B                         &kp N         &kp M                                                                                                                                                                    &kp COMMA                                                                                                                                                              &kp DOT                                                                                                                                                               &kp SLASH                                                                                                                                                                      &kp RSHFT
+                                                                                                                                                                                                                                                                                                                                                              &lt 2 ESCAPE                                                                                                                                                           &mt LEFT_SHIFT BACKSPACE                                                                                                                                                 &mt LEFT_GUI LA(BACKSPACE)    &lt 1 RETURN  &mt RIGHT_CONTROL SPACE                                                                                                                                                  &mt RIGHT_ALT
+
+            TAB = >;
         };
 
         NAV {

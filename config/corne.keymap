@@ -3237,12 +3237,12 @@ macros {
     };
 };  
 
-/* Automatically generated keymap */
 /{
     keymap {
         compatible = "zmk,keymap";
 
         layer_QWERTY {
+            display-name = "QWERTY";
             bindings = <
                       &kp TAB                         &kp Q                         &kp W                         &kp E                         &kp R   &kp T      &kp Y                          &kp U                          &kp I                          &kp O                             &kp P                      &kp BSLH
                      &kp CAPS  &LeftPinky (A, LAYER_QWERTY)  &LeftRingy (S, LAYER_QWERTY)  &LeftMiddy (D, LAYER_QWERTY)  &LeftIndex (F, LAYER_QWERTY)   &kp G      &kp H  &RightIndex (J, LAYER_QWERTY)  &RightMiddy (K, LAYER_QWERTY)  &RightRingy (L, LAYER_QWERTY)  &RightPinky (SEMI, LAYER_QWERTY)                       &kp SQT
@@ -3252,6 +3252,7 @@ macros {
         };
 
         layer_Typing {
+            display-name = "Typing";
             bindings = <
  &trans              &trans              &trans              &trans              &trans  &trans                                                                                                    &trans               &trans               &trans               &trans               &trans  &trans
  &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                                                                    &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
@@ -3261,6 +3262,7 @@ macros {
         };
 
         layer_LeftPinky {
+            display-name = "LeftPinky";
             bindings = <
  &left_pinky_tap KEY_LH_C6R1  &left_pinky_tap KEY_LH_C5R1  &left_pinky_tap KEY_LH_C4R1  &left_pinky_tap KEY_LH_C3R1  &left_pinky_tap KEY_LH_C2R1  &left_pinky_tap KEY_LH_C1R1                                                  &trans               &trans               &trans               &trans               &trans  &trans
  &left_pinky_tap KEY_LH_C6R2                        &none              &LeftPinkyRingy              &LeftPinkyMiddy              &LeftPinkyIndex  &left_pinky_tap KEY_LH_C1R2                                                  &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
@@ -3270,6 +3272,7 @@ macros {
         };
 
         layer_LeftRingy {
+            display-name = "LeftRingy";
             bindings = <
  &left_ringy_tap KEY_LH_C6R1  &left_ringy_tap KEY_LH_C5R1  &left_ringy_tap KEY_LH_C4R1  &left_ringy_tap KEY_LH_C3R1  &left_ringy_tap KEY_LH_C2R1  &left_ringy_tap KEY_LH_C1R1                                                  &trans               &trans               &trans               &trans               &trans  &trans
  &left_ringy_tap KEY_LH_C6R2              &LeftRingyPinky                        &none              &LeftRingyMiddy              &LeftRingyIndex  &left_ringy_tap KEY_LH_C1R2                                                  &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
@@ -3279,6 +3282,7 @@ macros {
         };
 
         layer_LeftMiddy {
+            display-name = "LeftMiddy";
             bindings = <
  &left_middy_tap KEY_LH_C6R1  &left_middy_tap KEY_LH_C5R1  &left_middy_tap KEY_LH_C4R1  &left_middy_tap KEY_LH_C3R1  &left_middy_tap KEY_LH_C2R1  &left_middy_tap KEY_LH_C1R1                                                  &trans               &trans               &trans               &trans               &trans  &trans
  &left_middy_tap KEY_LH_C6R2              &LeftMiddyPinky              &LeftMiddyRingy                        &none              &LeftMiddyIndex  &left_middy_tap KEY_LH_C1R2                                                  &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
@@ -3288,6 +3292,7 @@ macros {
         };
 
         layer_LeftIndex {
+            display-name = "LeftIndex";
             bindings = <
  &left_index_tap KEY_LH_C6R1  &left_index_tap KEY_LH_C5R1  &left_index_tap KEY_LH_C4R1  &left_index_tap KEY_LH_C3R1  &left_index_tap KEY_LH_C2R1  &left_index_tap KEY_LH_C1R1                                                  &trans               &trans               &trans               &trans               &trans  &trans
  &left_index_tap KEY_LH_C6R2              &LeftIndexPinky              &LeftIndexRingy              &LeftIndexMiddy                        &none  &left_index_tap KEY_LH_C1R2                                                  &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
@@ -3297,6 +3302,7 @@ macros {
         };
 
         layer_RightPinky {
+            display-name = "RightPinky";
             bindings = <
  &trans              &trans              &trans              &trans              &trans  &trans                                                  &right_pinky_tap KEY_RH_C1R1  &right_pinky_tap KEY_RH_C2R1  &right_pinky_tap KEY_RH_C3R1  &right_pinky_tap KEY_RH_C4R1  &right_pinky_tap KEY_RH_C5R1  &right_pinky_tap KEY_RH_C6R1
  &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                  &right_pinky_tap KEY_RH_C1R2              &RightPinkyIndex              &RightPinkyMiddy              &RightPinkyRingy                         &none  &right_pinky_tap KEY_RH_C6R2
@@ -3306,6 +3312,7 @@ macros {
         };
 
         layer_RightRingy {
+            display-name = "RightRingy";
             bindings = <
  &trans              &trans              &trans              &trans              &trans  &trans                                                  &right_ringy_tap KEY_RH_C1R1  &right_ringy_tap KEY_RH_C2R1  &right_ringy_tap KEY_RH_C3R1  &right_ringy_tap KEY_RH_C4R1  &right_ringy_tap KEY_RH_C5R1  &right_ringy_tap KEY_RH_C6R1
  &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                  &right_ringy_tap KEY_RH_C1R2              &RightRingyIndex              &RightRingyMiddy                         &none              &RightRingyPinky  &right_ringy_tap KEY_RH_C6R2
@@ -3315,6 +3322,7 @@ macros {
         };
 
         layer_RightMiddy {
+            display-name = "RightMiddy";
             bindings = <
  &trans              &trans              &trans              &trans              &trans  &trans                                                  &right_middy_tap KEY_RH_C1R1  &right_middy_tap KEY_RH_C2R1  &right_middy_tap KEY_RH_C3R1  &right_middy_tap KEY_RH_C4R1  &right_middy_tap KEY_RH_C5R1  &right_middy_tap KEY_RH_C6R1
  &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                  &right_middy_tap KEY_RH_C1R2              &RightMiddyIndex                         &none              &RightMiddyRingy              &RightMiddyPinky  &right_middy_tap KEY_RH_C6R2
@@ -3324,6 +3332,7 @@ macros {
         };
 
         layer_RightIndex {
+            display-name = "RightIndex";
             bindings = <
  &trans              &trans              &trans              &trans              &trans  &trans                                                  &right_index_tap KEY_RH_C1R1  &right_index_tap KEY_RH_C2R1  &right_index_tap KEY_RH_C3R1  &right_index_tap KEY_RH_C4R1  &right_index_tap KEY_RH_C5R1  &right_index_tap KEY_RH_C6R1
  &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                  &right_index_tap KEY_RH_C1R2                         &none              &RightIndexMiddy              &RightIndexRingy              &RightIndexPinky  &right_index_tap KEY_RH_C6R2
@@ -3333,6 +3342,7 @@ macros {
         };
 
         layer_Cursor {
+            display-name = "Cursor";
             bindings = <
  &kp _C(K)           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &kp _CUT                                                                                                   &kp _CUT   &kp BSPC       &kp _UNDO       &kp _REDO  &sk LSHFT    &kp _C(K)
  &kp _C(L)  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp _COPY                                                                                                  &kp _COPY   &kp LEFT          &kp UP        &kp DOWN  &kp RIGHT    &kp _C(L)
@@ -3342,6 +3352,7 @@ macros {
         };
 
         layer_Number {
+            display-name = "Number";
             bindings = <
    &kp A           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &kp D                                                                                &kp LS(G)  &kp _KP_N7    &kp _KP_N8     &kp _KP_N9      &kp COLON         &kp PRCNT
    &kp B  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD    &kp E                                                                                    &kp K  &kp _KP_N4    &kp _KP_N5     &kp _KP_N6  &kp _KP_MINUS      &kp _KP_PLUS
@@ -3351,6 +3362,7 @@ macros {
         };
 
         layer_Function {
+            display-name = "Function";
             bindings = <
    &none           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &none                                                                                     &kp K_CALC         &kp F7        &kp F8        &kp F9        &kp F10         &kp F13
    &none  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD    &none                                                                                      &kp K_WWW         &kp F4        &kp F5        &kp F6        &kp F11         &kp F14
@@ -3360,6 +3372,7 @@ macros {
         };
 
         layer_Symbol {
+            display-name = "Symbol";
             bindings = <
   &kp EXCL  &kp COMMA   &kp LBRC   &kp RBRC  &kp SEMI  &kp QMARK                                                                     &kp GRAVE             &kp LEFT               &kp UP             &kp DOWN            &kp RIGHT     &kp HOME
   &kp HASH  &kp CARET  &kp EQUAL  &kp UNDER  &kp DLLR   &kp STAR                                                                       &kp DQT             &kp BSPC              &kp TAB            &kp SPACE              &kp RET      &kp END
@@ -3369,6 +3382,7 @@ macros {
         };
 
         layer_Mouse {
+            display-name = "Mouse";
             bindings = <
   &none                   &none  &msc MOUSE_SCROLL_LEFT    &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT    &kp _CUT                                                                      &kp _CUT  &msc MOUSE_SCROLL_LEFT  &msc MOUSE_SCROLL_UP  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_RIGHT     &none
   &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_RIGHT   &kp _COPY                                                                     &kp _COPY                  &mo 24                &mo 25                  &mo 23                &kp K_APP     &none
@@ -3378,6 +3392,7 @@ macros {
         };
 
         layer_MouseSlow {
+            display-name = "MouseSlow";
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -3387,6 +3402,7 @@ macros {
         };
 
         layer_MouseFast {
+            display-name = "MouseFast";
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -3396,6 +3412,7 @@ macros {
         };
 
         layer_MouseWarp {
+            display-name = "MouseWarp";
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -3405,6 +3422,7 @@ macros {
         };
 
         layer_Gaming {
+            display-name = "Gaming";
             bindings = <
    &kp I     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                                                 &kp Y      &kp U      &kp I     &kp O      &kp P    &kp F12
    &kp T    &kp TAB   &kp Q   &kp W     &kp E   &kp R                                                                 &kp H      &kp J      &kp K     &kp L   &kp SEMI    &kp SQT
@@ -3414,6 +3432,7 @@ macros {
         };
 
         layer_Factory {
+            display-name = "Factory";
             bindings = <
               &kp TAB     &kp Q    &kp W     &kp E      &kp R   &kp T                                                                   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
               &kp ESC     &kp A    &kp S     &kp D      &kp F   &kp G                                                                   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
@@ -3423,6 +3442,7 @@ macros {
         };
 
         layer_Lower {
+            display-name = "Lower";
             bindings = <
               &kp TAB         &none           &none    &kp UP_ARROW              &none    &kp END                                                                                                                        &kp RPAR          &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_MINUS        &kp SCROLLLOCK
               &kp ESC         &none  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp PG_UP                                                                                                                     &kp PERCENT          &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS            &kp KP_NUM

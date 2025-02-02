@@ -219,6 +219,15 @@ behaviors {
             continue-list = <MINUS BACKSPACE>;
         };
 
+        para-left: para-left {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PARALEFT";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
         paraless: paraless {
             compatible = "zmk,behavior-mod-morph";
             label = "PARALESS";
@@ -3040,7 +3049,6 @@ macros {
   #define COMBO_FIRING_DECAY 50
   #endif
  
-
         // Left-hand modifier combos
 
  //       ctrl_alt {
@@ -3210,9 +3218,14 @@ macros {
             key-positions = <27 28>;
         };
 
+        para-left {
+            bindings = <&paraleft>;
+            key-positions = <18 19>;
+        };
+
         para-less {
             bindings = <&paraless>;
-            key-positions = <20 19>;
+            key-positions = <19 20>;
         };
 
         para-great {
@@ -3236,17 +3249,17 @@ macros {
         };
 
         typingLayer {
-            bindings = <&tog LAYER_Typing>;
+            bindings = <&to LAYER_Typing>;
             key-positions = <38 39>;
         };
 
         mousingLayer {
-            bindings = <&tog LAYER_Mouse>;
+            bindings = <&to LAYER_Mouse>;
             key-positions = <37 40>;
         };
 
         qwertyingLayer {
-            bindings = <&tog LAYER_QWERTY>;
+            bindings = <&to LAYER_QWERTY>;
             key-positions = <36 41>;
         };
     };

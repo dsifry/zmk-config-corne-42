@@ -3221,7 +3221,7 @@ macros {
         };
 
         myquestion {
-            bindings = <&kp QUESTION>;nm                
+            bindings = <&kp QUESTION>;              
             key-positions = <5 4>;
         };
 

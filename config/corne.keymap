@@ -3236,17 +3236,17 @@ macros {
         };
 
         typingLayer {
-            bindings = <&tog layer_Typing>;
+            bindings = <&tog LAYER_Typing>;
             key-positions = <38 39>;
         };
 
         mousingLayer {
-            bindings = <&tog layer_Mouse>;
+            bindings = <&tog LAYER_Mouse>;
             key-positions = <37 40>;
         };
 
         qwertyingLayer {
-            bindings = <&tog layer_QWERTY>;
+            bindings = <&tog LAYER_QWERTY>;
             key-positions = <36 41>;
         };
     };

@@ -3205,7 +3205,7 @@ macros {
             key-positions = <28 29>;
         };
     };
-
+};
 
 /* Automatically generated keymap */
 /{

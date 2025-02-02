@@ -3043,117 +3043,117 @@ macros {
 
         // Left-hand modifier combos
 
-        ctrl_alt {
-            bindings = <&kp LA(LCTRL)>;
-            key-positions = <13 14>;
-        };
+ //       ctrl_alt {
+ //           bindings = <&kp LA(LCTRL)>;
+ //           key-positions = <13 14>;
+ //       };
 
-        ctrl_gui {
-            bindings = <&kp LG(LCTRL)>;
-            key-positions = <13 15>;
-        };
+ //       ctrl_gui {
+ //           bindings = <&kp LG(LCTRL)>;
+ //           key-positions = <13 15>;
+ //       };
 
-        ctrl_shift {
-            bindings = <&kp LS(LCTRL)>;
-            key-positions = <13 16>;
-        };
+ //       ctrl_shift {
+ //           bindings = <&kp LS(LCTRL)>;
+ //           key-positions = <13 16>;
+ //       };
 
-        alt_gui {
-            bindings = <&kp LG(LALT)>;
-            key-positions = <14 15>;
-        };
+ //         alt_gui {
+ //           bindings = <&kp LG(LALT)>;
+ //           key-positions = <14 15>;
+ //       };
 
-        alt_shift {
-            bindings = <&kp LS(LEFT_ALT)>;
-            key-positions = <14 16>;
-        };
+ //       alt_shift {
+ //           bindings = <&kp LS(LEFT_ALT)>;
+ //           key-positions = <14 16>;
+ //       };
 
-        gui_shift {
-            bindings = <&kp LS(LGUI)>;
-            key-positions = <15 16>;
-        };
+ //       gui_shift {
+ //           bindings = <&kp LS(LGUI)>;
+ //           key-positions = <15 16>;
+ //       };
 
-        ctrl_alt_gui {
-            bindings = <&kp LA(LG(LCTRL))>;
-            key-positions = <13 14 15>;
-        };
+ //       ctrl_alt_gui {
+ //           bindings = <&kp LA(LG(LCTRL))>;
+ //           key-positions = <13 14 15>;
+ //       };
 
-        ctrl_alt_shift {
-            bindings = <&kp LS(LA(LCTRL))>;
-            key-positions = <13 14 16>;
-        };
+ //       ctrl_alt_shift {
+ //           bindings = <&kp LS(LA(LCTRL))>;
+ //           key-positions = <13 14 16>;
+ //       };
 
-        ctrl_gui_shift {
-            bindings = <&kp LS(LG(LCTRL))>;
-            key-positions = <13 15 16>;
-        };
+ //       ctrl_gui_shift {
+ //           bindings = <&kp LS(LG(LCTRL))>;
+ //           key-positions = <13 15 16>;
+ //       };
 
-        alt_gui_shift {
-            bindings = <&kp LG(LS(LALT))>;
-            key-positions = <14 15 16>;
-        };
+ //       alt_gui_shift {
+ //           bindings = <&kp LG(LS(LALT))>;
+ //           key-positions = <14 15 16>;
+ //       };
 
-        ctrl_alt_gui_shift {
-            bindings = <&kp LG(LA(LS(LCTRL)))>;
-            key-positions = <13 14 15 16>;
-        };
+ //       ctrl_alt_gui_shift {
+ //           bindings = <&kp LG(LA(LS(LCTRL)))>;
+ //           key-positions = <13 14 15 16>;
+ //       };
 
         // Right-hand modifier combos
 
-        r_ctrl_alt {
-            bindings = <&kp RA(RCTRL)>;
-            key-positions = <22 21>;
-        };
+ //       r_ctrl_alt {
+ //           bindings = <&kp RA(RCTRL)>;
+ //           key-positions = <22 21>;
+ //       };
 
-        r_ctrl_gui {
-            bindings = <&kp RG(RCTRL)>;
-            key-positions = <22 20>;
-        };
+ //       r_ctrl_gui {
+ //           bindings = <&kp RG(RCTRL)>;
+ //           key-positions = <22 20>;
+ //       };
 
-        r_ctrl_shift {
-            bindings = <&kp RS(RCTRL)>;
-            key-positions = <22 19>;
-        };
+ //       r_ctrl_shift {
+ //           bindings = <&kp RS(RCTRL)>;
+ //           key-positions = <22 19>;
+ //       };
 
-        r_alt_gui {
-            bindings = <&kp RG(RALT)>;
-            key-positions = <21 20>;
-        };
+ //       r_alt_gui {
+ //           bindings = <&kp RG(RALT)>;
+ //           key-positions = <21 20>;
+ //       };
 
-        r_alt_shift {
-            bindings = <&kp RS(RALT)>;
-            key-positions = <21 19>;
-        };
+ //       r_alt_shift {
+ //           bindings = <&kp RS(RALT)>;
+ //           key-positions = <21 19>;
+ //       };
 
-        r_gui_shift {
-            bindings = <&kp RS(RGUI)>;
-            key-positions = <20 19>;
-        };
+ //       r_gui_shift {
+ //           bindings = <&kp RS(RGUI)>;
+ //           key-positions = <20 19>;
+ //       };
 
-        r_ctrl_alt_gui {
-            bindings = <&kp RA(RG(RCTRL))>;
-            key-positions = <22 21 20>;
-        };
+ //       r_ctrl_alt_gui {
+ //           bindings = <&kp RA(RG(RCTRL))>;
+ //           key-positions = <22 21 20>;
+ //       };
 
-        r_ctrl_alt_shift {
-            bindings = <&kp RS(RA(RCTRL))>;
-            key-positions = <22 21 19>;
-        };
+ //       r_ctrl_alt_shift {
+ //           bindings = <&kp RS(RA(RCTRL))>;
+ //           key-positions = <22 21 19>;
+ //       };
 
-        r_ctrl_gui_shift {
-            bindings = <&kp RS(RG(RCTRL))>;
-            key-positions = <22 20 19>;
-        };
+ //       r_ctrl_gui_shift {
+ //           bindings = <&kp RS(RG(RCTRL))>;
+ //           key-positions = <22 20 19>;
+ //       };
 
-        r_alt_gui_shift {
-            bindings = <&kp RG(RS(RALT))>;
-            key-positions = <21 20 19>;
-        };
+ //       r_alt_gui_shift {
+ //           bindings = <&kp RG(RS(RALT))>;
+ //           key-positions = <21 20 19>;
+ //       };
 
-        r_ctrl_alt_gui_shift {
-            bindings = <&kp RS(RA(RG(RCTRL)))>;
-            key-positions = <22 21 20 19>;
-        };
+ //       r_ctrl_alt_gui_shift {
+ //           bindings = <&kp RS(RA(RG(RCTRL)))>;
+ //           key-positions = <22 21 20 19>;
+ //       };
 
         escape {
             bindings = <&kp ESCAPE>;
@@ -3247,7 +3247,7 @@ macros {
                       &kp TAB                         &kp Q                         &kp W                         &kp E                         &kp R   &kp T      &kp Y                          &kp U                          &kp I                          &kp O                             &kp P                      &kp BSLH
                      &kp CAPS  &LeftPinky (A, LAYER_QWERTY)  &LeftRingy (S, LAYER_QWERTY)  &LeftMiddy (D, LAYER_QWERTY)  &LeftIndex (F, LAYER_QWERTY)   &kp G      &kp H  &RightIndex (J, LAYER_QWERTY)  &RightMiddy (K, LAYER_QWERTY)  &RightRingy (L, LAYER_QWERTY)  &RightPinky (SEMI, LAYER_QWERTY)                       &kp SQT
  &sticky_key_modtap LSFT LSFT                         &kp Z                         &kp X                         &kp C                         &kp V   &kp B      &kp N                          &kp M                      &kp COMMA                        &kp DOT                          &kp FSLH  &sticky_key_modtap RSFT RSFT
-                                                                &thumb LAYER_Function ESC &thumb LAYER_Cursor BACKSPACE    &thumb LAYER_Number DELETE                         &thumb LAYER_Typing ENTER      &space LAYER_Symbol SPACE         &thumb LAYER_Mouse TAB 
+                                                                &thumb LAYER_Function ESC &thumb LAYER_Cursor BACKSPACE    &thumb LAYER_Number LA(BACKSPACE)                         &thumb SHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB 
             >;
         };
 
@@ -3344,9 +3344,9 @@ macros {
         layer_Cursor {
             display-name = "Cursor";
             bindings = <
- &kp _C(K)           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &kp _CUT                                                                                                   &kp _CUT   &kp BSPC       &kp _UNDO       &kp _REDO  &sk LSHFT    &kp _C(K)
- &kp _C(L)  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp _COPY                                                                                                  &kp _COPY   &kp LEFT          &kp UP        &kp DOWN  &kp RIGHT    &kp _C(L)
- &kp _C(J)         &select_all        &select_line        &select_word           &kp _FIND  &kp _PASTE                                                                                                  &kp _PASTE   &kp HOME       &kp PG_UP       &kp PG_DN    &kp END    &kp _C(J)
+ &kp _C(K)           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &kp C_AC_CUT                                                                                                    &kp C_AC_CUT   &kp BSPC       &kp _UNDO       &kp _REDO  &sk LSHFT    &kp _C(K)
+ &kp _C(L)  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp C_AC_COPY                                                                                                   &kp C_AC_COPY   &kp LEFT          &kp UP        &kp DOWN  &kp RIGHT    &kp _C(L)
+ &kp _C(J)         &select_all        &select_line        &select_word           &kp _FIND  &kp C_AC_PASTE                                                                                                  &kp C_AC_PASTE   &kp HOME       &kp PG_UP       &kp PG_DN    &kp END    &kp _C(J)
                                                                                                            &none    &mod_tab LCTL            &kp TAB   &select_all  &select_line  &select_word              
             >;
         };
@@ -3384,9 +3384,9 @@ macros {
         layer_Mouse {
             display-name = "Mouse";
             bindings = <
-  &none                   &none  &msc MOUSE_SCROLL_LEFT    &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT    &kp _CUT                                                                      &kp _CUT  &msc MOUSE_SCROLL_LEFT  &msc MOUSE_SCROLL_UP  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_RIGHT     &none
-  &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_RIGHT   &kp _COPY                                                                     &kp _COPY                  &mo 24                &mo 25                  &mo 23                &kp K_APP     &none
-  &none  &msc MOUSE_SCROLL_DOWN                  &mo 23          &mo 25                   &mo 24  &kp _PASTE                                                                    &kp _PASTE          &mmv MOVE_LEFT          &mmv MOVE_UP          &mmv MOVE_DOWN          &mmv MOVE_RIGHT     &none
+  &none                   &none  &msc MOUSE_SCROLL_LEFT    &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT    &kp C_AC_CUT                                                                      &kp C_AC_CUT  &msc MOUSE_SCROLL_LEFT  &msc MOUSE_SCROLL_UP  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_RIGHT     &none
+  &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_RIGHT   &kp C_AC_COPY                                                                     &kp C_AC_COPY                  &mo 24                &mo 25                  &mo 23                &kp K_APP     &none
+  &none  &msc MOUSE_SCROLL_DOWN                  &mo 23          &mo 25                   &mo 24  &kp C_AC_PASTE                                                                    &kp C_AC_PASTE          &mmv MOVE_LEFT          &mmv MOVE_UP          &mmv MOVE_DOWN          &mmv MOVE_RIGHT     &none
                                                                                                               &mkp LCLK  &mkp RCLK  &mkp MB4             &none   &none   &none
             >;
         };
@@ -3488,8 +3488,8 @@ macros {
         compatible = "zmk,conditional-layers";
 
         l3 {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <LAYER_Function LAYER_Lower>;
+            then-layer = <LAYER_Magic>;
         };
     };
 };

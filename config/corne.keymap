@@ -2766,8 +2766,6 @@ macros {
   )
 };
 
-/*HACK*//{
-
 //////////////////////////////////////////////////////////////////////////
 //
 // Mouse keys (keyboard mouse control) requires v24.12 firmware or newer:

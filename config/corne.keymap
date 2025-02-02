@@ -205,6 +205,38 @@
 / {
 behaviors {
 
+        para: para {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PARA";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+        };
+
+        caps: caps {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS";
+            #binding-cells = <0>;
+            continue-list = <MINUS BACKSPACE>;
+        };
+
+        paraless: paraless {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PARALESS";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        paragreat: paragreat {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PARAGREAT";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
   //////////////////////////////////////////////////////////////////////////
   //
   // Miryoku layers and home row mods (ported from my QMK endgame)

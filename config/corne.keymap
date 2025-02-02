@@ -3432,12 +3432,12 @@ macros {
         };
 
         layer_Magic {
+            display-name = "Magic";
             bindings = <
-  &bt BT_CLR    &bt_0   &bt_1   &bt_2    &bt_3    &bt_4                                                  &none   &none   &none   &none   &none  &bt BT_CLR_ALL
- &bootloader    &none   &none   &none    &none    &none                                                  &none   &none   &none   &none   &none     &bootloader
-  &sys_reset    &none   &none   &none    &none    &none                                                  &none   &none   &none   &none   &none      &sys_reset
-                                                        &bt_0   &bt_1  &bt2   &none   &none   &none
-            >;
+&trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5            &kp F6          &kp F7          &kp F8          &kp F9           &kp F10      &trans
+&trans  &kp F11       &kp F12       &trans        &trans      &studio_unlock    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans       &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &bootloader  &trans
+                                    &trans        &trans      &trans            &trans          &trans          &trans
         };
 
         ADJ {

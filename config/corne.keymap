@@ -3491,9 +3491,9 @@ macros {
         layer_Lower {
             display-name = "Lower";
             bindings = <
-              &kp TAB         &none           &none    &kp UP_ARROW           &kp HOME    &kp END                                                                                                                  PARA          &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_MINUS        &studio_unlock
+              &kp TAB         &none           &none    &kp UP_ARROW           &kp HOME    &kp END                                                                                                             &kp COMMA          &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_MINUS        &studio_unlock
               &kp ESC         &none  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp PG_UP                                                                                                           &kp PERCENT          &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS            &kp KP_NUM
-            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_CLR     &bt BT_CLR_ALL  &kp PG_DN                                                                                                             &kp COMMA          &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_ENTER              &kp LALT
+            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_CLR     &bt BT_CLR_ALL  &kp PG_DN                                                                                                               &kp DOT          &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_ENTER              &kp LALT
                                                                                                      &tog LAYER_Cursor  &tog LAYER_Number  &tog LAYER_System  &tog LAYER_Magic  &tog LAYER_Factory  &none
             >;
             

@@ -132,28 +132,28 @@
 
 /* Automatically generated layer name #define */
 #define LAYER_QWERTY 0
-#define LAYER_LeftPinky 1
-#define LAYER_LeftRingy 2
-#define LAYER_LeftMiddy 3
-#define LAYER_LeftIndex 4
-#define LAYER_RightPinky 5
-#define LAYER_RightRingy 6
-#define LAYER_RightMiddy 7
-#define LAYER_RightIndex 8
-#define LAYER_Cursor 9
-#define LAYER_Number 10
-#define LAYER_Function 11
-#define LAYER_Symbol 12
-#define LAYER_Mouse 13
-#define LAYER_MouseSlow 14
-#define LAYER_MouseFast 15
-#define LAYER_MouseWarp 16
-#define LAYER_Gaming 17
-#define LAYER_Typing 18
-#define LAYER_Factory 19
-#define LAYER_Lower 20
-#define LAYER_System 21
-#define LAYER_Magic 22
+#define LAYER_LeftPinky 2
+#define LAYER_LeftRingy 3
+#define LAYER_LeftMiddy 4
+#define LAYER_LeftIndex 5
+#define LAYER_RightPinky 6
+#define LAYER_RightRingy 7
+#define LAYER_RightMiddy 8
+#define LAYER_RightIndex 9
+#define LAYER_Cursor 10
+#define LAYER_Number 11
+#define LAYER_Function 12
+#define LAYER_Symbol 13
+#define LAYER_Mouse 14
+#define LAYER_MouseSlow 15
+#define LAYER_MouseFast 16
+#define LAYER_MouseWarp 17
+#define LAYER_Gaming 18
+#define LAYER_Typing 19
+#define LAYER_Factory 20
+#define LAYER_Lower 21
+#define LAYER_System 22
+#define LAYER_Magic 23
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
@@ -3255,7 +3255,7 @@ macros {
         };
 
         mousingLayer {
-            bindings = <&to LAYER_Mouse>;
+            bindings = <&to LAYER_Mouse + 1>;
             key-positions = <37 40>;
         };
 

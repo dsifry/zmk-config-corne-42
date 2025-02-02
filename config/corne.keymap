@@ -2810,7 +2810,7 @@ macros {
   //
   // NOTE: edit the emoji.yaml file and run `rake` to generate this:
   //
-
+/*HACK*//{
   //
   // codepoints
   //

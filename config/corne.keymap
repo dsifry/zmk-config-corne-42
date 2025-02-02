@@ -7,7 +7,7 @@
 
 // NOTE: Use the many #define settings below to customize this keymap!
 #define ENABLE_MOUSE_KEYS  // requires v24.12-beta or newer firmware
-//#define NATURAL_SCROLLING  // supports "natural scrolling" in macOS
+#define NATURAL_SCROLLING  // supports "natural scrolling" in macOS
 #define OPERATING_SYSTEM 'M' // choose 'L'inux, 'M'acOS, or 'W'indows
 #define DIFFICULTY_LEVEL  3  // 0:custom, 1:easy -> 5:hard (see below)
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
@@ -132,28 +132,28 @@
 
 /* Automatically generated layer name #define */
 #define LAYER_QWERTY 0
-#define LAYER_LeftPinky 2
-#define LAYER_LeftRingy 3
-#define LAYER_LeftMiddy 4
-#define LAYER_LeftIndex 5
-#define LAYER_RightPinky 6
-#define LAYER_RightRingy 7
-#define LAYER_RightMiddy 8
-#define LAYER_RightIndex 9
-#define LAYER_Cursor 10
-#define LAYER_Number 11
-#define LAYER_Function 12
-#define LAYER_Symbol 13
-#define LAYER_Mouse 14
-#define LAYER_MouseSlow 15
-#define LAYER_MouseFast 16
-#define LAYER_MouseWarp 17
-#define LAYER_Gaming 18
-#define LAYER_Typing 19
-#define LAYER_Factory 20
-#define LAYER_Lower 21
-#define LAYER_System 22
-#define LAYER_Magic 23
+#define LAYER_LeftPinky 1
+#define LAYER_LeftRingy 2
+#define LAYER_LeftMiddy 3
+#define LAYER_LeftIndex 4
+#define LAYER_RightPinky 5
+#define LAYER_RightRingy 6
+#define LAYER_RightMiddy 7
+#define LAYER_RightIndex 8
+#define LAYER_Cursor 9
+#define LAYER_Number 10
+#define LAYER_Function 11
+#define LAYER_Symbol 12
+#define LAYER_Mouse 13
+#define LAYER_MouseSlow 14
+#define LAYER_MouseFast 15
+#define LAYER_MouseWarp 16
+#define LAYER_Gaming 17
+#define LAYER_Typing 18
+#define LAYER_Factory 19
+#define LAYER_Lower 20
+#define LAYER_System 21
+#define LAYER_Magic 22
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
@@ -3255,7 +3255,7 @@ macros {
         };
 
         mousingLayer {
-            bindings = <&to LAYER_Mouse>;
+            bindings = <&to LAYER_Mouse >;
             key-positions = <37 40>;
         };
 
@@ -3276,7 +3276,7 @@ macros {
                       &kp TAB                         &kp Q                         &kp W                         &kp E                         &kp R   &kp T      &kp Y                          &kp U                          &kp I                          &kp O                             &kp P                      &kp BSLH
                      &kp CAPS  &LeftPinky (A, LAYER_QWERTY)  &LeftRingy (S, LAYER_QWERTY)  &LeftMiddy (D, LAYER_QWERTY)  &LeftIndex (F, LAYER_QWERTY)   &kp G      &kp H  &RightIndex (J, LAYER_QWERTY)  &RightMiddy (K, LAYER_QWERTY)  &RightRingy (L, LAYER_QWERTY)  &RightPinky (SEMI, LAYER_QWERTY)                       &kp SQT
  &sticky_key_modtap LSFT LSFT                         &kp Z                         &kp X                         &kp C                         &kp V   &kp B      &kp N                          &kp M                      &kp COMMA                        &kp DOT                          &kp FSLH  &sticky_key_modtap RSFT RSFT
-                                                                &thumb LAYER_Function ESC &thumb LAYER_Cursor BACKSPACE    &thumb LAYER_Number LA(BACKSPACE)                         &mt LSHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB 
+                                                                &thumb LAYER_Function ESC &thumb LAYER_Mouse BACKSPACE    &thumb LAYER_Number LA(BACKSPACE)                         &mt LSHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB 
             >;
             
         };
@@ -3417,8 +3417,8 @@ macros {
             display-name = "Mouse";
             bindings = <
   &none                   &none  &msc MOUSE_SCROLL_LEFT    &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT    &kp C_AC_CUT                                                                      &kp C_AC_CUT  &msc MOUSE_SCROLL_LEFT  &msc MOUSE_SCROLL_UP  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_RIGHT     &none
-  &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_RIGHT   &kp C_AC_COPY                                                                     &kp C_AC_COPY                  &mo 24                &mo 25                  &mo 23                &kp K_APP     &none
-  &none  &msc MOUSE_SCROLL_DOWN                  &mo 23          &mo 25                   &mo 24  &kp C_AC_PASTE                                                                    &kp C_AC_PASTE          &mmv MOVE_LEFT          &mmv MOVE_UP          &mmv MOVE_DOWN          &mmv MOVE_RIGHT     &none
+  &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_RIGHT   &kp C_AC_COPY                                                                     &kp C_AC_COPY                  &mo 14                &mo 16                  &mo 15                &kp K_APP     &none
+  &none  &msc MOUSE_SCROLL_DOWN                  &mo 14          &mo 16                   &mo 15  &kp C_AC_PASTE                                                                    &kp C_AC_PASTE          &mmv MOVE_LEFT          &mmv MOVE_UP          &mmv MOVE_DOWN          &mmv MOVE_RIGHT     &none
                                                                                                               &mkp LCLK  &mkp RCLK  &mkp MB4             &none   &none   &none
             >;
             

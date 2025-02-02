@@ -3438,6 +3438,7 @@ macros {
 &trans  &kp F11       &kp F12       &trans        &trans      &studio_unlock    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans       &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &bootloader  &trans
                                     &trans        &trans      &trans            &trans          &trans          &trans
+            >;
         };
 
         ADJ {

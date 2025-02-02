@@ -3255,7 +3255,7 @@ macros {
         };
 
         mousingLayer {
-            bindings = <&to LAYER_Mouse + 1>;
+            bindings = <&to LAYER_Mouse>;
             key-positions = <37 40>;
         };
 

@@ -3278,18 +3278,7 @@ macros {
  &sticky_key_modtap LSFT LSFT                         &kp Z                         &kp X                         &kp C                         &kp V   &kp B      &kp N                          &kp M                      &kp COMMA                        &kp DOT                          &kp FSLH  &sticky_key_modtap RSFT RSFT
                                                                 &thumb LAYER_Function ESC &thumb LAYER_Cursor BACKSPACE    &thumb LAYER_Number LA(BACKSPACE)                         &mt LSHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB 
             >;
-            layer-id = <LAYER_QWERTY>;
-        };
-
-        layer_Typing {
-            display-name = "Typing";
-            bindings = <
- &trans              &trans              &trans              &trans              &trans  &trans                                                                                                    &trans               &trans               &trans               &trans               &trans  &trans
- &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                                                                    &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
- &trans              &trans              &trans              &trans              &trans  &trans                                                                                                    &trans               &trans               &trans               &trans               &trans  &trans
-                                  &kp KEY_LH_T1       &kp KEY_LH_T2              &trans                                                                                                                                 &trans        &kp KEY_RH_T2        &kp KEY_RH_T1
-            >;
-            layer-id = <LAYER_Typing>;
+            layer-id = <0>;
         };
 
         layer_LeftPinky {
@@ -3300,7 +3289,7 @@ macros {
                       &trans  &left_pinky_tap KEY_LH_C5R3  &left_pinky_tap KEY_LH_C4R3  &left_pinky_tap KEY_LH_C3R3  &left_pinky_tap KEY_LH_C2R3  &left_pinky_tap KEY_LH_C1R3                                                  &trans               &trans               &trans               &trans               &trans  &trans
                                                                                                                                                                                &trans  &trans  &trans  &trans  &trans  &trans
             >;
-            layer-id = <LAYER_LeftPinky>;
+            layer-id = <1>;
         };
 
         layer_LeftRingy {
@@ -3311,7 +3300,7 @@ macros {
                       &trans  &left_ringy_tap KEY_LH_C5R3  &left_ringy_tap KEY_LH_C4R3  &left_ringy_tap KEY_LH_C3R3  &left_ringy_tap KEY_LH_C2R3  &left_ringy_tap KEY_LH_C1R3                                                  &trans               &trans               &trans               &trans               &trans  &trans
                                                                                                                                                                                &trans  &trans  &trans  &trans  &trans  &trans
             >;
-            layer-id = <LAYER_LeftRingy>;
+            layer-id = <2>;
         };
 
         layer_LeftMiddy {
@@ -3322,7 +3311,7 @@ macros {
                       &trans  &left_middy_tap KEY_LH_C5R3  &left_middy_tap KEY_LH_C4R3  &left_middy_tap KEY_LH_C3R3  &left_middy_tap KEY_LH_C2R3  &left_middy_tap KEY_LH_C1R3                                                  &trans               &trans               &trans               &trans               &trans  &trans
                                                                                                                                                                                &trans  &trans  &trans  &trans  &trans  &trans
             >;
-            layer-id = <LAYER_LeftMiddy>;
+            layer-id = <3>;
         };
 
         layer_LeftIndex {
@@ -3333,7 +3322,7 @@ macros {
                       &trans  &left_index_tap KEY_LH_C5R3  &left_index_tap KEY_LH_C4R3  &left_index_tap KEY_LH_C3R3  &left_index_tap KEY_LH_C2R3  &left_index_tap KEY_LH_C1R3                                                  &trans               &trans               &trans               &trans               &trans  &trans
                                                                                                                                                                                &trans  &trans  &trans  &trans  &trans  &trans                      
             >;
-            layer-id = <LAYER_LeftIndex>;
+            layer-id = <4>;
         };
 
         layer_RightPinky {
@@ -3344,6 +3333,7 @@ macros {
  &trans              &trans              &trans              &trans              &trans  &trans                                                  &right_pinky_tap KEY_RH_C1R3  &right_pinky_tap KEY_RH_C2R3  &right_pinky_tap KEY_RH_C3R3  &right_pinky_tap KEY_RH_C4R3  &right_pinky_tap KEY_RH_C5R3                        &trans
                                                                                                   &trans  &trans  &trans  &trans  &trans  &trans                                
             >;
+            layer-id = <5>;
         };
 
         layer_RightRingy {
@@ -3354,7 +3344,7 @@ macros {
  &trans              &trans              &trans              &trans              &trans  &trans                                                  &right_ringy_tap KEY_RH_C1R3  &right_ringy_tap KEY_RH_C2R3  &right_ringy_tap KEY_RH_C3R3  &right_ringy_tap KEY_RH_C4R3  &right_ringy_tap KEY_RH_C5R3                        &trans
                                                                                                   &trans  &trans  &trans  &trans  &trans  &trans
             >;
-            layer-id = <LAYER_RightRingy>;
+            layer-id = <6>;
         };
 
         layer_RightMiddy {
@@ -3365,7 +3355,7 @@ macros {
  &trans              &trans              &trans              &trans              &trans  &trans                                                  &right_middy_tap KEY_RH_C1R3  &right_middy_tap KEY_RH_C2R3  &right_middy_tap KEY_RH_C3R3  &right_middy_tap KEY_RH_C4R3  &right_middy_tap KEY_RH_C5R3                        &trans
                                                                                                   &trans  &trans  &trans  &trans  &trans  &trans
             >;
-            layer-id = <LAYER_RightMiddy>;
+            layer-id = <7>;
         };
 
         layer_RightIndex {
@@ -3376,7 +3366,7 @@ macros {
  &trans              &trans              &trans              &trans              &trans  &trans                                                  &right_index_tap KEY_RH_C1R3  &right_index_tap KEY_RH_C2R3  &right_index_tap KEY_RH_C3R3  &right_index_tap KEY_RH_C4R3  &right_index_tap KEY_RH_C5R3                        &trans
                                                                                                 &trans  &trans  &trans  &trans  &trans  &trans
             >;
-            layer-id = <LAYER_RightIndex>;
+            layer-id = <8>;
         };
 
         layer_Cursor {
@@ -3387,7 +3377,7 @@ macros {
  &kp _C(J)         &select_all        &select_line        &select_word           &kp _FIND  &kp C_AC_PASTE                                                                                                  &kp C_AC_PASTE   &kp HOME       &kp PG_UP       &kp PG_DN    &kp END    &kp _C(J)
                                                                                                            &none    &mod_tab LCTL            &kp TAB   &select_all  &select_line  &select_word              
             >;
-            layer-id = <LAYER_Cursor>;
+            layer-id = <9>;
         };
 
         layer_Number {
@@ -3398,7 +3388,7 @@ macros {
    &kp C         &select_all        &select_line        &select_word               &kp X    &kp F                                                                                    &kp J  &kp _KP_N1    &kp _KP_N2     &kp _KP_N3  &kp _KP_SLASH  &kp _KP_ASTERISK
                                                                                                           &none  &none  &kp _KP_COMMA  &kp _KP_DOT     &kp _KP_N0    &kp LBKT  
             >;
-            layer-id = <LAYER_Number>;
+            layer-id = <10>;
         };
 
         layer_Function {
@@ -3409,7 +3399,7 @@ macros {
    &none         &select_all        &select_line        &select_word               &none    &none                                                                                 &kp C_AL_FILES         &kp F1        &kp F2        &kp F3        &kp F12         &kp F15
                                                                                                         &none   &none   &none           &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP
             >;
-            layer-id = <LAYER_Function>;
+            layer-id = <11>;
         };
 
         layer_Symbol {
@@ -3420,7 +3410,7 @@ macros {
  &kp TILDE     &kp LT   &kp PIPE  &kp MINUS    &kp GT   &kp FSLH                                                                       &kp SQT              &kp DEL          &kp LS(TAB)         &select_word         &select_line  &select_all
                                                                     &kp PRCNT  &kp COLON    &kp AT              &none   &none   &none
             >;
-            layer-id = <LAYER_Symbol>;
+            layer-id = <12>;
         };
 
         layer_Mouse {
@@ -3431,7 +3421,7 @@ macros {
   &none  &msc MOUSE_SCROLL_DOWN                  &mo 23          &mo 25                   &mo 24  &kp C_AC_PASTE                                                                    &kp C_AC_PASTE          &mmv MOVE_LEFT          &mmv MOVE_UP          &mmv MOVE_DOWN          &mmv MOVE_RIGHT     &none
                                                                                                               &mkp LCLK  &mkp RCLK  &mkp MB4             &none   &none   &none
             >;
-            layer-id = <LAYER_Mouse>;
+            layer-id = <13>;
         };
 
         layer_MouseSlow {
@@ -3442,7 +3432,7 @@ macros {
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
                                                  &trans  &trans  &trans  &trans  &trans  &trans
             >;
-            layer-id = <LAYER_MouseSlow>;
+            layer-id = <14>;
         };
 
         layer_MouseFast {
@@ -3453,7 +3443,7 @@ macros {
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
                                                  &trans  &trans  &trans  &trans  &trans  &trans
             >;
-            layer-id = <LAYER_MouseFast>;
+            layer-id = <15>;
         };
 
         layer_MouseWarp {
@@ -3464,7 +3454,7 @@ macros {
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
                                                  &trans  &trans  &trans  &trans  &trans  &trans
             >;
-            layer-id = <LAYER_MouseWarp>;
+            layer-id = <16>;
         };
 
         layer_Gaming {
@@ -3475,7 +3465,18 @@ macros {
    &kp G  &kp LSHFT   &kp A   &kp S     &kp D   &kp F  &kp LSHFT   &kp LALT  &kp RET   &kp ESC    &kp UP    &kp RET   &kp N      &kp M  &kp COMMA   &kp DOT   &kp FSLH   &kp BSLH
                                                        &kp SPACE  &kp LCTRL    &kp V  &kp LEFT  &kp DOWN  &kp RIGHT 
             >;
-            layer-id = <LAYER_Gaming>;
+            layer-id = <17>;
+        };
+
+        layer_Typing {
+            display-name = "Typing";
+            bindings = <
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                                    &trans               &trans               &trans               &trans               &trans  &trans
+ &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                                                                    &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                                    &trans               &trans               &trans               &trans               &trans  &trans
+                                  &kp KEY_LH_T1       &kp KEY_LH_T2              &trans                                                                                                                                 &trans        &kp KEY_RH_T2        &kp KEY_RH_T1
+            >;
+            layer-id = <18>;
         };
 
         layer_Factory {
@@ -3486,7 +3487,7 @@ macros {
             &kp GRAVE     &kp Z    &kp X     &kp C      &kp V   &kp B                                                                   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp PG_UP
                                                                        &kp BSPC    &kp DEL  &kp LALT  &kp RALT    &kp RET  &kp SPACE        
             >;  
-            layer-id = <LAYER_Factory>;
+            layer-id = <19>;
         };
 
         layer_Lower {
@@ -3497,7 +3498,18 @@ macros {
             &kp GRAVE     &kp K_APP           &none         &kp F11            &kp F12  &kp PG_DN                                                                                                                       &kp COMMA          &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_ENTER              &kp LALT
                                                                                                      &tog LAYER_Cursor  &tog LAYER_Number  &tog LAYER_Gaming  &tog LAYER_Gaming  &tog LAYER_Mouse  &tog LAYER_Symbol
             >;
-            layer-id = <LAYER_Lower>;
+            layer-id = <20>;
+        };
+
+        layer_System {
+            display-name = "System";
+            bindings = <
+&trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5            &kp F6          &kp F7          &kp F8          &kp F9           &kp F10      &trans
+&trans  &kp F11       &kp F12       &trans        &trans      &studio_unlock    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans       &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &bootloader  &trans
+                                    &trans        &trans      &trans            &trans          &trans          &trans
+            >;
+            layer-id = <21>;
         };
 
         layer_Magic {
@@ -3508,29 +3520,9 @@ macros {
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &bootloader  &trans
                                     &trans        &trans      &trans            &trans          &trans          &trans
             >;  
-            layer-id = <LAYER_Magic>;
+            layer-id = <22>;
         };
-
-        ADJ {
-            display-name = "System";
-            bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5            &kp F6          &kp F7          &kp F8          &kp F9           &kp F10      &trans
-&trans  &kp F11       &kp F12       &trans        &trans      &studio_unlock    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans       &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &bootloader  &trans
-                                    &trans        &trans      &trans            &trans          &trans          &trans
-            >;
-            layer-id = <LAYER_System>;
-        };
-
-        EXTRA {
-            display-name = "extra";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &bootloader  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
+        
     };
 };
 

@@ -149,12 +149,10 @@
 #define LAYER_MouseSlow 15
 #define LAYER_MouseFast 16
 #define LAYER_MouseWarp 17
-#define LAYER_System 18
-#define LAYER_World 19
-#define LAYER_Gaming 20
-#define LAYER_Factory 21
-#define LAYER_Lower 22
-#define LAYER_Magic 23
+#define LAYER_Gaming 18
+#define LAYER_Factory 19
+#define LAYER_Lower 20
+#define LAYER_Magic 21
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
@@ -3371,15 +3369,6 @@ macros {
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
                                                  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_System {
-            bindings = <
-  &none            &none  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI     &rgb_ug RGB_TOG  &kp PAUSE_BREAK                                                                        &kp PAUSE_BREAK            &kp _LOCK           &kp _SLEEP           &kp _POWER      &rgb_ug RGB_SAI  &rgb_ug RGB_SAD
-  &none  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI     &rgb_ug RGB_EFF        &kp PSCRN                                                                              &kp PSCRN      &rgb_ug RGB_TOG      &rgb_ug RGB_EFR      &rgb_ug RGB_EFF      &rgb_ug RGB_HUI  &rgb_ug RGB_HUD
-  &none  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI     &rgb_ug RGB_SPI        &kp K_APP                                                                              &kp K_APP             &kp SLCK           &kp KP_NUM             &kp CAPS      &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
-                                                                                                   &kp SLCK  &kp KP_NUM    &kp CAPS              &none   &none   &none
             >;
         };
 

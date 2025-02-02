@@ -3208,7 +3208,7 @@ macros {
 
 
 /* Automatically generated keymap */
-/ {
+/{
     keymap {
         compatible = "zmk,keymap";
 

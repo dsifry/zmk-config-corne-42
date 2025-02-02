@@ -3169,7 +3169,7 @@ macros {
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <15 21>;
+            key-positions = <17 18>;
         };
 
         perc {
@@ -3203,17 +3203,17 @@ macros {
         };
 
         cut {
-            bindings = <&kp C_AC_CUT>;
+            bindings = <&kp _C(X)>;
             key-positions = <27 25>;
         };
 
         copy {
-            bindings = <&kp C_AC_COPY>;
+            bindings = <&kp _C(C)>;
             key-positions = <27 26>;
         };
 
         paste {
-            bindings = <&kp C_AC_PASTE>;
+            bindings = <&kp _C(V)>;
             key-positions = <27 28>;
         };
 
@@ -3370,10 +3370,10 @@ macros {
         layer_Cursor {
             display-name = "Cursor";
             bindings = <
- &kp _C(K)           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &kp C_AC_CUT                                                                                                    &kp C_AC_CUT   &kp BSPC       &kp _UNDO       &kp _REDO  &sk LSHFT    &kp _C(K)
- &kp _C(L)  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp C_AC_COPY                                                                                                   &kp C_AC_COPY   &kp LEFT          &kp UP        &kp DOWN  &kp RIGHT    &kp _C(L)
- &kp _C(J)         &select_all        &select_line        &select_word           &kp _FIND  &kp C_AC_PASTE                                                                                                  &kp C_AC_PASTE   &kp HOME       &kp PG_UP       &kp PG_DN    &kp END    &kp _C(J)
-                                                                                                           &none    &mod_tab LCTL            &kp TAB   &select_all  &select_line  &select_word              
+ &kp _C(K)           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &kp _C(X)                                                         &kp _C(X)   &kp BSPC       &kp _UNDO       &kp _REDO  &sk LSHFT    &kp _C(K)
+ &kp _C(L)  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD    &kp _C(C)                                                         &kp _C(C)   &kp LEFT          &kp UP        &kp DOWN  &kp RIGHT    &kp _C(L)
+ &kp _C(J)         &select_all        &select_line        &select_word        &extend_word    &kp _C(V)                                                         &kp _C(V)   &kp HOME       &kp PG_UP       &kp PG_DN    &kp END    &kp _C(J)
+                                                                                                           &trans  &trans  &trans  &trans  &trans  &trans                 
             >;
             
         };
@@ -3381,10 +3381,10 @@ macros {
         layer_Number {
             display-name = "Number";
             bindings = <
-   &kp A           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &kp D                                                                                &kp LS(G)  &kp _KP_N7    &kp _KP_N8     &kp _KP_N9      &kp COLON         &kp PRCNT
-   &kp B  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD    &kp E                                                                                    &kp K  &kp _KP_N4    &kp _KP_N5     &kp _KP_N6  &kp _KP_MINUS      &kp _KP_PLUS
-   &kp C         &select_all        &select_line        &select_word               &kp X    &kp F                                                                                    &kp J  &kp _KP_N1    &kp _KP_N2     &kp _KP_N3  &kp _KP_SLASH  &kp _KP_ASTERISK
-                                                                                                          &none  &none  &kp _KP_COMMA  &kp _KP_DOT     &kp _KP_N0    &kp LBKT  
+   &kp A           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC     &kp _C(X)                                                       &kp LS(G)  &kp _KP_N7    &kp _KP_N8     &kp _KP_N9      &kp COLON         &kp PRCNT
+   &kp B  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD     &kp _C(C)                                                         &kp DOT  &kp _KP_N4    &kp _KP_N5     &kp _KP_N6  &kp _KP_MINUS      &kp _KP_PLUS
+   &kp C         &select_all        &select_line        &select_word        &extend_word     &kp _C(V)                                                      &kp _KP_N0  &kp _KP_N1    &kp _KP_N2     &kp _KP_N3  &kp _KP_SLASH  &kp _KP_ASTERISK
+                                                                                                          &trans  &trans  &trans  &trans  &trans  &trans
             >;
             
         };
@@ -3392,10 +3392,10 @@ macros {
         layer_Function {
             display-name = "Function";
             bindings = <
-   &none           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &none                                                                                     &kp K_CALC         &kp F7        &kp F8        &kp F9        &kp F10         &kp F13
-   &none  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD    &none                                                                                      &kp K_WWW         &kp F4        &kp F5        &kp F6        &kp F11         &kp F14
-   &none         &select_all        &select_line        &select_word               &none    &none                                                                                 &kp C_AL_FILES         &kp F1        &kp F2        &kp F3        &kp F12         &kp F15
-                                                                                                        &none   &none   &none           &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP
+   &none           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &kp C_VOL_UP                                                   &kp C_NEXT         &kp F7        &kp F8        &kp F9        &kp F10         &kp F13
+   &none  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD      &kp C_MUTE                                                   &kp C_PLAY         &kp F4        &kp F5        &kp F6        &kp F11         &kp F14
+   &none         &select_all        &select_line        &select_word        &extend_word    &kp C_VOL_DN                                                   &kp C_PREV         &kp F1        &kp F2        &kp F3        &kp F12         &kp F15
+                                                                                                          &trans  &trans  &trans  &trans  &trans  &trans
             >;
             
         };
@@ -3403,10 +3403,10 @@ macros {
         layer_Symbol {
             display-name = "Symbol";
             bindings = <
-  &kp EXCL  &kp COMMA   &kp LBRC   &kp RBRC  &kp SEMI  &kp QMARK                                                                     &kp GRAVE             &kp LEFT               &kp UP             &kp DOWN            &kp RIGHT     &kp HOME
-  &kp HASH  &kp CARET  &kp EQUAL  &kp UNDER  &kp DLLR   &kp STAR                                                                       &kp DQT             &kp BSPC              &kp TAB            &kp SPACE              &kp RET      &kp END
- &kp TILDE     &kp LT   &kp PIPE  &kp MINUS    &kp GT   &kp FSLH                                                                       &kp SQT              &kp DEL          &kp LS(TAB)         &select_word         &select_line  &select_all
-                                                                    &kp PRCNT  &kp COLON    &kp AT              &none   &none   &none
+  &kp EXCL  &kp COMMA   &kp LBRC   &kp RBRC  &kp SEMI  &kp QMARK                                                                        &kp GRAVE             &kp LEFT               &kp UP             &kp DOWN            &kp RIGHT     &kp HOME
+  &kp HASH  &kp CARET  &kp EQUAL  &kp UNDER  &kp DLLR   &kp STAR                                                                          &kp DQT             &kp BSPC              &kp TAB            &kp SPACE              &kp RET      &kp END
+ &kp TILDE     &kp LT   &kp PIPE  &kp MINUS    &kp GT   &kp FSLH                                                                          &kp SQT              &kp DEL          &kp LS(TAB)         &select_word         &select_line  &select_all
+                                                                    &kp PRCNT  &kp COLON    &kp AT              &trans   &trans   &trans
             >;
             
         };
@@ -3414,9 +3414,9 @@ macros {
         layer_Mouse {
             display-name = "Mouse";
             bindings = <
-  &none                   &none  &msc MOUSE_SCROLL_LEFT    &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT    &kp C_AC_CUT                                                                      &kp C_AC_CUT  &msc MOUSE_SCROLL_LEFT  &msc MOUSE_SCROLL_UP  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_RIGHT     &none
-  &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_RIGHT   &kp C_AC_COPY                                                                     &kp C_AC_COPY                  &mo 14                &mo 16                  &mo 15                &kp K_APP     &none
-  &none  &msc MOUSE_SCROLL_DOWN                  &mo 14          &mo 16                   &mo 15  &kp C_AC_PASTE                                                                    &kp C_AC_PASTE          &mmv MOVE_LEFT          &mmv MOVE_UP          &mmv MOVE_DOWN          &mmv MOVE_RIGHT     &none
+  &none                   &none  &msc MOUSE_SCROLL_LEFT    &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT    &kp _C(X)                                                                      &kp C_AC_CUT  &msc MOUSE_SCROLL_LEFT  &msc MOUSE_SCROLL_UP  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_RIGHT     &none
+  &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_RIGHT    &kp _C(C)                                                                     &kp C_AC_COPY                  &mo 14                &mo 16                  &mo 15                &kp K_APP     &none
+  &none  &msc MOUSE_SCROLL_DOWN                  &mo 14          &mo 16                   &mo 15    &kp _C(V)                                                                    &kp C_AC_PASTE          &mmv MOVE_LEFT          &mmv MOVE_UP          &mmv MOVE_DOWN          &mmv MOVE_RIGHT     &none
                                                                                                               &mkp LCLK  &mkp RCLK  &mkp MB3             &none   &none   &none
             >;
             
@@ -3460,7 +3460,7 @@ macros {
             bindings = <
    &kp I     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                                                 &kp Y      &kp U      &kp I     &kp O      &kp P    &kp F12
    &kp T    &kp TAB   &kp Q   &kp W     &kp E   &kp R                                                                 &kp H      &kp J      &kp K     &kp L   &kp SEMI    &kp SQT
-   &kp G  &kp LSHFT   &kp A   &kp S     &kp D   &kp F  &kp LSHFT   &kp LALT  &kp RET   &kp ESC    &kp UP    &kp RET   &kp N      &kp M  &kp COMMA   &kp DOT   &kp FSLH   &kp BSLH
+   &kp G  &kp LSHFT   &kp A   &kp S     &kp D   &kp F                                                                 &kp N      &kp M  &kp COMMA   &kp DOT   &kp FSLH   &kp BSLH
                                                        &kp SPACE  &kp LCTRL    &kp V  &kp LEFT  &kp DOWN  &kp RIGHT 
             >;
             
@@ -3469,10 +3469,10 @@ macros {
         layer_Typing {
             display-name = "Typing";
             bindings = <
- &trans              &trans              &trans              &trans              &trans  &trans                                                                                                    &trans               &trans               &trans               &trans               &trans  &trans
- &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                                                                    &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
- &trans              &trans              &trans              &trans              &trans  &trans                                                                                                    &trans               &trans               &trans               &trans               &trans  &trans
-                                  &kp KEY_LH_T1       &kp KEY_LH_T2              &trans                                                                                                                                 &trans        &kp KEY_RH_T2        &kp KEY_RH_T1
+ &trans              &trans              &trans              &trans              &trans  &trans                                                        &trans               &trans               &trans               &trans               &trans  &trans
+ &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                        &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
+ &trans              &trans              &trans              &trans              &trans  &trans                                                        &trans               &trans               &trans               &trans               &trans  &trans
+   &thumb LAYER_Function ESC &thumb LAYER_Cursor BACKSPACE    &thumb LAYER_Number LA(BACKSPACE)                                                        &mt LSHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB
             >;
             
         };
@@ -3491,10 +3491,10 @@ macros {
         layer_Lower {
             display-name = "Lower";
             bindings = <
-              &kp TAB         &none           &none    &kp UP_ARROW              &none    &kp END                                                                                                                        &kp RPAR          &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_MINUS        &studio_unlock
-              &kp ESC         &none  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp PG_UP                                                                                                                     &kp PERCENT          &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS            &kp KP_NUM
-            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_CLR     &bt BT_CLR_ALL  &kp PG_DN                                                                                                                       &kp COMMA          &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_ENTER              &kp LALT
-                                                                                                     &tog LAYER_Cursor  &tog LAYER_Number  &tog LAYER_Gaming  &tog LAYER_Gaming  &tog LAYER_Mouse  &tog LAYER_Symbol
+              &kp TAB         &none           &none    &kp UP_ARROW           &kp HOME    &kp END                                                                                                              &kp PARA          &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_MINUS        &studio_unlock
+              &kp ESC         &none  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp PG_UP                                                                                                           &kp PERCENT          &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS            &kp KP_NUM
+            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_CLR     &bt BT_CLR_ALL  &kp PG_DN                                                                                                             &kp COMMA          &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_ENTER              &kp LALT
+                                                                                                     &tog LAYER_Cursor  &tog LAYER_Number  &tog LAYER_System  &tog LAYER_Magic  &tog LAYER_Factory  &none
             >;
             
         };
@@ -3502,10 +3502,10 @@ macros {
         layer_System {
             display-name = "System";
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5            &kp F6          &kp F7          &kp F8          &kp F9           &kp F10      &trans
-&trans  &kp F11       &kp F12       &trans        &trans      &studio_unlock    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans       &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &bootloader  &trans
-                                    &trans        &trans      &trans            &trans          &trans          &trans
+&trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5                                                                                                                &kp F6          &kp F7          &kp F8          &kp F9           &kp F10      &trans
+&trans  &kp F11       &kp F12       &trans        &trans      &studio_unlock                                                                                                  &msc SCRL_UP       &mkp LCLK    &mmv MOVE_UP       &mkp RCLK            &trans      &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL                                                                                                &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT      &bootloader      &trans
+                                                                                    &trans        &trans      &trans            &trans          &trans          &trans
             >;
             
         };
@@ -3513,10 +3513,10 @@ macros {
         layer_Magic {
             display-name = "Magic";
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5            &kp F6          &kp F7          &kp F8          &kp F9           &kp F10      &trans
-&trans  &kp F11       &kp F12       &trans        &trans      &studio_unlock    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans       &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &bootloader  &trans
-                                    &trans        &trans      &trans            &trans          &trans          &trans
+&trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5                                                                                                               &kp F6          &kp F7             &kp F8           &kp F9       &kp F10      &trans
+&trans  &kp F11       &kp F12       &trans        &trans      &studio_unlock                                                                                                 &msc SCRL_UP       &mkp LCLK       &mmv MOVE_UP        &mkp RCLK        &trans      &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL                                                                                               &msc SCRL_DOWN  &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &bootloader      &trans
+                                                                                    &trans        &trans      &trans            &trans          &trans          &trans
             >;  
             
         };

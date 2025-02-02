@@ -2764,6 +2764,7 @@ macros {
     tap-ms = <SELECT_WORD_DELAY>;
     bindings = <&kp LS(UP) &kp LS(_HOME)>;
   )
+}
 
 /*HACK*//{
 

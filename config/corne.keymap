@@ -219,7 +219,7 @@ behaviors {
             continue-list = <MINUS BACKSPACE>;
         };
 
-        para-left: para-left {
+        para-left: paraleft {
             compatible = "zmk,behavior-mod-morph";
             label = "PARALEFT";
             bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;

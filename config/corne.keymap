@@ -3272,7 +3272,7 @@ macros {
         layer_LeftRingy {
             bindings = <
  &left_ringy_tap KEY_LH_C6R1  &left_ringy_tap KEY_LH_C5R1  &left_ringy_tap KEY_LH_C4R1  &left_ringy_tap KEY_LH_C3R1  &left_ringy_tap KEY_LH_C2R1  &left_ringy_tap KEY_LH_C1R1                                                  &trans               &trans               &trans               &trans               &trans  &trans
- &left_ringy_tap KEY_LH_C6R2              &LeftringyRingy                        &none              &LeftringyMiddy              &LeftringyIndex  &left_ringy_tap KEY_LH_C1R2                                                  &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
+ &left_ringy_tap KEY_LH_C6R2              &LeftRingyPinky                        &none              &LeftRingyMiddy              &LeftRingyIndex  &left_ringy_tap KEY_LH_C1R2                                                  &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
                       &trans  &left_ringy_tap KEY_LH_C5R3  &left_ringy_tap KEY_LH_C4R3  &left_ringy_tap KEY_LH_C3R3  &left_ringy_tap KEY_LH_C2R3  &left_ringy_tap KEY_LH_C1R3                                                  &trans               &trans               &trans               &trans               &trans  &trans
                                                                                                                                                                                &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -3281,7 +3281,7 @@ macros {
         layer_LeftMiddy {
             bindings = <
  &left_middy_tap KEY_LH_C6R1  &left_middy_tap KEY_LH_C5R1  &left_middy_tap KEY_LH_C4R1  &left_middy_tap KEY_LH_C3R1  &left_middy_tap KEY_LH_C2R1  &left_middy_tap KEY_LH_C1R1                                                  &trans               &trans               &trans               &trans               &trans  &trans
- &left_middy_tap KEY_LH_C6R2              &LeftMiddyMiddy                        &none              &LeftMiddyMiddy              &LeftMiddyIndex  &left_middy_tap KEY_LH_C1R2                                                  &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
+ &left_middy_tap KEY_LH_C6R2              &LeftMiddyPinky              &LeftMiddyRingy                       &&none              &LeftMiddyIndex  &left_middy_tap KEY_LH_C1R2                                                  &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
                       &trans  &left_middy_tap KEY_LH_C5R3  &left_middy_tap KEY_LH_C4R3  &left_middy_tap KEY_LH_C3R3  &left_middy_tap KEY_LH_C2R3  &left_middy_tap KEY_LH_C1R3                                                  &trans               &trans               &trans               &trans               &trans  &trans
                                                                                                                                                                                &trans  &trans  &trans  &trans  &trans  &trans
             >;

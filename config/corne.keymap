@@ -3010,12 +3010,6 @@ macros {
   #define COMBO_FIRING_DECAY 50
   #endif
  
-  combo_caps_lock {
-    timeout-ms = <COMBO_FIRING_DECAY>;
-    key-positions = <POS_LH_T3 POS_RH_T1>;
-    bindings = <&kp CAPSLOCK>;
-    layers = <0 1 2 3 4 5 6 7>;
-  };
 
         // Left-hand modifier combos
 

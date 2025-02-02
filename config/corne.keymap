@@ -152,7 +152,8 @@
 #define LAYER_Typing 18
 #define LAYER_Factory 19
 #define LAYER_Lower 20
-#define LAYER_Magic 21
+#define LAYER_System 21
+#define LAYER_Magic 22
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower

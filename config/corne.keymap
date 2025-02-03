@@ -3372,7 +3372,7 @@ macros {
             bindings = <
  &kp _C(K)           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC          &kp _C(X)                                                         &kp _C(X)   &kp BSPC       &kp _UNDO       &kp _REDO  &sk LSHFT    &kp _C(K)
  &kp _C(L)  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD          &kp _C(C)                                                         &kp _C(C)   &kp LEFT          &kp UP        &kp DOWN  &kp RIGHT    &kp _C(L)
- &kp _C(J)         &select_all        &select_line        &select_word        &extend_word_right    &kp _C(V)                                                         &kp _C(V)   &kp HOME       &kp PG_UP       &kp PG_DN    &kp END    &kp _C(J)
+ &kp _C(I)         &select_all        &select_line        &select_word        &extend_word_right    &kp _C(V)                                                         &kp _C(V)   &kp HOME       &kp PG_UP       &kp PG_DN    &kp END    &kp _C(I)
                                                                                                            &trans  &trans  &trans  &trans  &trans  &trans                 
             >;
             
@@ -3381,9 +3381,9 @@ macros {
         layer_Number {
             display-name = "Number";
             bindings = <
-   &kp C_BRI_INC            &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC           &kp _C(X)                                                       &kp LS(G)  &kp _KP_N7    &kp _KP_N8     &kp _KP_N9      &kp COLON         &kp PRCNT
-   &kp C_BRI_AUTO  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD           &kp _C(C)                                                         &kp DOT  &kp _KP_N4    &kp _KP_N5     &kp _KP_N6  &kp _KP_MINUS      &kp _KP_PLUS
-   &kp C_BRI_DEC          &select_all        &select_line        &select_word        &extend_word_right     &kp _C(V)                                                      &kp _KP_N0  &kp _KP_N1    &kp _KP_N2     &kp _KP_N3  &kp _KP_SLASH  &kp _KP_ASTERISK
+          &kp F15            &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC           &kp _C(X)                                                       &kp LS(G)  &kp _KP_N7    &kp _KP_N8     &kp _KP_N9      &kp COLON         &kp PRCNT
+   &mt LGUI SPACE   &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD           &kp _C(C)                                                         &kp DOT  &kp _KP_N4    &kp _KP_N5     &kp _KP_N6  &kp _KP_MINUS      &kp _KP_PLUS
+          &kp F14          &select_all        &select_line        &select_word        &extend_word_right     &kp _C(V)                                                      &kp _KP_N0  &kp _KP_N1    &kp _KP_N2     &kp _KP_N3  &kp _KP_SLASH  &kp _KP_ASTERISK
                                                                                                           &trans  &trans  &trans  &trans  &trans  &trans
             >;
             
@@ -3392,9 +3392,9 @@ macros {
         layer_Function {
             display-name = "Function";
             bindings = <
-    &kp C_BRI_INC           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC          &kp C_VOL_UP                                                   &kp C_NEXT         &kp F7        &kp F8        &kp F9        &kp F10         &kp F13
-   &kp C_BRI_AUTO  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD            &kp C_MUTE                                                     &kp K_PP         &kp F4        &kp F5        &kp F6        &kp F11         &kp F14
-    &kp C_BRI_DEC         &select_all        &select_line        &select_word        &extend_word_right    &kp C_VOL_DN                                                   &kp C_PREV         &kp F1        &kp F2        &kp F3        &kp F12         &kp F15
+          &kp F15           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC          &kp C_VOL_UP                                                   &kp C_NEXT         &kp F7        &kp F8        &kp F9        &kp F10         &kp F13
+   &mt LGUI SPACE  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD            &kp C_MUTE                                                     &kp K_PP         &kp F4        &kp F5        &kp F6        &kp F11         &kp F14
+          &kp F14         &select_all        &select_line        &select_word        &extend_word_right    &kp C_VOL_DN                                                   &kp C_PREV         &kp F1        &kp F2        &kp F3        &kp F12         &kp F15
                                                                                                           &trans  &trans  &trans  &trans  &trans  &trans
             >;
             

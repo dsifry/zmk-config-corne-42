@@ -3382,7 +3382,7 @@ macros {
             display-name = "Number";
             bindings = <
           &kp F15            &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC           &kp _C(X)                                                       &kp LS(G)  &kp _KP_N7    &kp _KP_N8     &kp _KP_N9      &kp COLON         &kp PRCNT
-   &mt LGUI SPACE   &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD           &kp _C(C)                                                         &kp DOT  &kp _KP_N4    &kp _KP_N5     &kp _KP_N6  &kp _KP_MINUS      &kp _KP_PLUS
+    &kp LG(SPACE)   &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD           &kp _C(C)                                                         &kp DOT  &kp _KP_N4    &kp _KP_N5     &kp _KP_N6  &kp _KP_MINUS      &kp _KP_PLUS
           &kp F14          &select_all        &select_line        &select_word        &extend_word_right     &kp _C(V)                                                      &kp _KP_N0  &kp _KP_N1    &kp _KP_N2     &kp _KP_N3  &kp _KP_SLASH  &kp _KP_ASTERISK
                                                                                                           &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -3393,7 +3393,7 @@ macros {
             display-name = "Function";
             bindings = <
           &kp F15           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC          &kp C_VOL_UP                                                   &kp C_NEXT         &kp F7        &kp F8        &kp F9        &kp F10         &kp F13
-   &mt LGUI SPACE  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD            &kp C_MUTE                                                     &kp K_PP         &kp F4        &kp F5        &kp F6        &kp F11         &kp F14
+    &kp LG(SPACE)  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD            &kp C_MUTE                                                     &kp K_PP         &kp F4        &kp F5        &kp F6        &kp F11         &kp F14
           &kp F14         &select_all        &select_line        &select_word        &extend_word_right    &kp C_VOL_DN                                                   &kp C_PREV         &kp F1        &kp F2        &kp F3        &kp F12         &kp F15
                                                                                                           &trans  &trans  &trans  &trans  &trans  &trans
             >;

@@ -3048,119 +3048,6 @@ macros {
   #define COMBO_FIRING_DECAY 50
   #endif
  
-        // Left-hand modifier combos
-
- //       ctrl_alt {
- //           bindings = <&kp LA(LCTRL)>;
- //           key-positions = <13 14>;
- //       };
-
- //       ctrl_gui {
- //           bindings = <&kp LG(LCTRL)>;
- //           key-positions = <13 15>;
- //       };
-
- //       ctrl_shift {
- //           bindings = <&kp LS(LCTRL)>;
- //           key-positions = <13 16>;
- //       };
-
- //         alt_gui {
- //           bindings = <&kp LG(LALT)>;
- //           key-positions = <14 15>;
- //       };
-
- //       alt_shift {
- //           bindings = <&kp LS(LEFT_ALT)>;
- //           key-positions = <14 16>;
- //       };
-
- //       gui_shift {
- //           bindings = <&kp LS(LGUI)>;
- //           key-positions = <15 16>;
- //       };
-
- //       ctrl_alt_gui {
- //           bindings = <&kp LA(LG(LCTRL))>;
- //           key-positions = <13 14 15>;
- //       };
-
- //       ctrl_alt_shift {
- //           bindings = <&kp LS(LA(LCTRL))>;
- //           key-positions = <13 14 16>;
- //       };
-
- //       ctrl_gui_shift {
- //           bindings = <&kp LS(LG(LCTRL))>;
- //           key-positions = <13 15 16>;
- //       };
-
- //       alt_gui_shift {
- //           bindings = <&kp LG(LS(LALT))>;
- //           key-positions = <14 15 16>;
- //       };
-
- //       ctrl_alt_gui_shift {
- //           bindings = <&kp LG(LA(LS(LCTRL)))>;
- //           key-positions = <13 14 15 16>;
- //       };
-
-        // Right-hand modifier combos
-
- //       r_ctrl_alt {
- //           bindings = <&kp RA(RCTRL)>;
- //           key-positions = <22 21>;
- //       };
-
- //       r_ctrl_gui {
- //           bindings = <&kp RG(RCTRL)>;
- //           key-positions = <22 20>;
- //       };
-
- //       r_ctrl_shift {
- //           bindings = <&kp RS(RCTRL)>;
- //           key-positions = <22 19>;
- //       };
-
- //       r_alt_gui {
- //           bindings = <&kp RG(RALT)>;
- //           key-positions = <21 20>;
- //       };
-
- //       r_alt_shift {
- //           bindings = <&kp RS(RALT)>;
- //           key-positions = <21 19>;
- //       };
-
- //       r_gui_shift {
- //           bindings = <&kp RS(RGUI)>;
- //           key-positions = <20 19>;
- //       };
-
- //       r_ctrl_alt_gui {
- //           bindings = <&kp RA(RG(RCTRL))>;
- //           key-positions = <22 21 20>;
- //       };
-
- //       r_ctrl_alt_shift {
- //           bindings = <&kp RS(RA(RCTRL))>;
- //           key-positions = <22 21 19>;
- //       };
-
- //       r_ctrl_gui_shift {
- //           bindings = <&kp RS(RG(RCTRL))>;
- //           key-positions = <22 20 19>;
- //       };
-
- //       r_alt_gui_shift {
- //           bindings = <&kp RG(RS(RALT))>;
- //           key-positions = <21 20 19>;
- //       };
-
- //       r_ctrl_alt_gui_shift {
- //           bindings = <&kp RS(RA(RG(RCTRL)))>;
- //           key-positions = <22 21 20 19>;
- //       };
 
         escape {
             bindings = <&kp ESCAPE>;
@@ -3203,23 +3090,18 @@ macros {
         };
 
         cut {
-            bindings = <&kp _C(X)>;
-            key-positions = <27 25>;
+            bindings = <&kp LG(X)>;
+            key-positions = <25 26>;
         };
 
         copy {
-            bindings = <&kp _C(C)>;
-            key-positions = <27 26>;
+            bindings = <&kp LG(C)>;
+            key-positions = <26 27>;
         };
 
         paste {
-            bindings = <&kp _C(V)>;
+            bindings = <&kp LG(V)>;
             key-positions = <27 28>;
-        };
-
-        para-left {
-            bindings = <&paraleft>;
-            key-positions = <18 19>;
         };
 
         para-less {
@@ -3230,6 +3112,16 @@ macros {
         para-great {
             bindings = <&paragreat>;
             key-positions = <20 21>;
+        };
+
+        bracket-less {
+            bindings = <&kp LBKT>;
+            key-positions = <7 8>;
+        };
+
+        bracket-great {
+            bindings = <&kp RBKT>;
+            key-positions = <8 9>;
         };
 
         myquestion {

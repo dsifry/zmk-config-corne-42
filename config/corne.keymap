@@ -3381,9 +3381,9 @@ macros {
         layer_Number {
             display-name = "Number";
             bindings = <
-   &kp A           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC           &kp _C(X)                                                       &kp LS(G)  &kp _KP_N7    &kp _KP_N8     &kp _KP_N9      &kp COLON         &kp PRCNT
-   &kp B  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD           &kp _C(C)                                                         &kp DOT  &kp _KP_N4    &kp _KP_N5     &kp _KP_N6  &kp _KP_MINUS      &kp _KP_PLUS
-   &kp C         &select_all        &select_line        &select_word        &extend_word_right     &kp _C(V)                                                      &kp _KP_N0  &kp _KP_N1    &kp _KP_N2     &kp _KP_N3  &kp _KP_SLASH  &kp _KP_ASTERISK
+   &C_BRI_INC            &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC           &kp _C(X)                                                       &kp LS(G)  &kp _KP_N7    &kp _KP_N8     &kp _KP_N9      &kp COLON         &kp PRCNT
+   &C_BRI_AUTO  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD           &kp _C(C)                                                         &kp DOT  &kp _KP_N4    &kp _KP_N5     &kp _KP_N6  &kp _KP_MINUS      &kp _KP_PLUS
+   &C_BRI_DEC          &select_all        &select_line        &select_word        &extend_word_right     &kp _C(V)                                                      &kp _KP_N0  &kp _KP_N1    &kp _KP_N2     &kp _KP_N3  &kp _KP_SLASH  &kp _KP_ASTERISK
                                                                                                           &trans  &trans  &trans  &trans  &trans  &trans
             >;
             
@@ -3392,9 +3392,9 @@ macros {
         layer_Function {
             display-name = "Function";
             bindings = <
-   &none           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC          &kp C_VOL_UP                                                   &kp C_NEXT         &kp F7        &kp F8        &kp F9        &kp F10         &kp F13
-   &none  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD            &kp C_MUTE                                                   &kp C_PLAY         &kp F4        &kp F5        &kp F6        &kp F11         &kp F14
-   &none         &select_all        &select_line        &select_word        &extend_word_right    &kp C_VOL_DN                                                   &kp C_PREV         &kp F1        &kp F2        &kp F3        &kp F12         &kp F15
+    &C_BRI_INC           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC          &kp C_VOL_UP                                                   &kp C_NEXT         &kp F7        &kp F8        &kp F9        &kp F10         &kp F13
+   &C_BRI_AUTO  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD            &kp C_MUTE                                                     &kp K_PP         &kp F4        &kp F5        &kp F6        &kp F11         &kp F14
+    &C_BRI_DEC         &select_all        &select_line        &select_word        &extend_word_right    &kp C_VOL_DN                                                   &kp C_PREV         &kp F1        &kp F2        &kp F3        &kp F12         &kp F15
                                                                                                           &trans  &trans  &trans  &trans  &trans  &trans
             >;
             
@@ -3414,9 +3414,9 @@ macros {
         layer_Mouse {
             display-name = "Mouse";
             bindings = <
-  &none                   &none  &msc MOUSE_SCROLL_LEFT    &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT    &kp _C(X)                                                                      &kp C_AC_CUT  &msc MOUSE_SCROLL_LEFT  &msc MOUSE_SCROLL_UP  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_RIGHT     &none
-  &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_RIGHT    &kp _C(C)                                                                     &kp C_AC_COPY                  &mo 14                &mo 16                  &mo 15                &kp K_APP     &none
-  &none  &msc MOUSE_SCROLL_DOWN                  &mo 14          &mo 16                   &mo 15    &kp _C(V)                                                                    &kp C_AC_PASTE          &mmv MOVE_LEFT          &mmv MOVE_UP          &mmv MOVE_DOWN          &mmv MOVE_RIGHT     &none
+  &none                   &none  &msc MOUSE_SCROLL_LEFT    &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT    &kp _C(X)                                                                      &kp _C(X)  &msc MOUSE_SCROLL_LEFT  &msc MOUSE_SCROLL_UP  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_RIGHT     &none
+  &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_RIGHT    &kp _C(C)                                                                      &kp _C(C)                  &mo 14                &mo 16                  &mo 15                &kp K_APP     &none
+  &none  &msc MOUSE_SCROLL_DOWN                  &mo 14          &mo 16                   &mo 15    &kp _C(V)                                                                      &kp _C(V)          &mmv MOVE_LEFT          &mmv MOVE_UP          &mmv MOVE_DOWN          &mmv MOVE_RIGHT     &none
                                                                                                               &mkp LCLK  &mkp RCLK  &mkp MB3             &none   &none   &none
             >;
             
@@ -3491,9 +3491,9 @@ macros {
         layer_Lower {
             display-name = "Lower";
             bindings = <
-              &kp TAB         &none           &none    &kp UP_ARROW           &kp HOME    &kp END                                                                                                             &kp COMMA          &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_MINUS        &studio_unlock
-              &kp ESC         &none  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp PG_UP                                                                                                           &kp PERCENT          &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS            &kp KP_NUM
-            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_CLR     &bt BT_CLR_ALL  &kp PG_DN                                                                                                               &kp DOT          &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_ENTER              &kp LALT
+              &kp TAB         &bt BT_CLR_ALL      &none    &kp UP_ARROW           &kp HOME    &kp END                                                                                                             &kp COMMA          &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_MINUS        &studio_unlock
+              &kp ESC         &bt BT_CLR  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &kp PG_UP                                                                                                           &kp PERCENT          &kp KP_N4     &kp KP_N5     &kp KP_N6      &kp KP_PLUS            &kp KP_NUM
+            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4  &kp PG_DN                                                                                                               &kp DOT          &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_ENTER              &kp LALT
                                                                                                      &tog LAYER_Cursor  &tog LAYER_Number  &tog LAYER_System  &tog LAYER_Magic  &tog LAYER_Factory  &none
             >;
             

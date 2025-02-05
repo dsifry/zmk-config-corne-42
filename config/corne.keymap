@@ -206,16 +206,16 @@
 behaviors {
 
         BACKDEL: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+          compatible = "zmk,behavior-mod-morph";
+          #binding-cells = <0>;
+          bindings = <&kp BACKSPACE>, <&kp LO(RIGHT)>, <&wait 20>, <&kp BACKSPACE>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+};
 
         ALTBACKDEL: alt_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
+            bindings = <&kp LO(BACKSPACE)>, <&kp LO(DELETE)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 

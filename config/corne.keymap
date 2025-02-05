@@ -209,14 +209,14 @@ behaviors {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT | MOD_RSFT)>;
+            mods = <(MOD_LSFT MOD_RSFT)>;
         };
 
         ALTBACKDEL: alt_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LALT(BACKSPACE)>, <&kp LALT(DELETE)>;
-            mods = <(MOD_LSFT | MOD_RSFT)>;
+            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
+            mods = <(MOD_LSFT MOD_RSFT)>;
         };
 
         para: para {

@@ -2,6 +2,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 // NOTE: Use the many #define settings below to customize this keymap!
 #define ENABLE_MOUSE_KEYS  // requires v24.12-beta or newer firmware
@@ -19,7 +21,8 @@
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// Sunaku's Keymap v41 -- "Glorious Engrammer"
+// Glorious Engrammer layout for Corne42
+// Based on Sunaku's Keymap v41 -- "Glorious Engrammer"
 // - https://github.com/sunaku/glove80-keymaps
 //
 //////////////////////////////////////////////////////////////////////////////
@@ -3138,6 +3141,8 @@ macros {
             bindings = <&kp MINUS>;
             key-positions = <28 29>;
         };
+
+        
 
         typingLayer {
             bindings = <&to LAYER_Typing>;

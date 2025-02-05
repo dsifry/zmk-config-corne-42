@@ -208,14 +208,14 @@ behaviors {
         BACKDEL: backspace_delete {
           compatible = "zmk,behavior-mod-morph";
           #binding-cells = <0>;
-          bindings = <&kp BACKSPACE>, <&kp LO(RIGHT)>, <&wait 20>, <&kp BACKSPACE>;
+          bindings = <&kp BACKSPACE>, <&kp RIGHT>, <&kp BACKSPACE>;
           mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
         ALTBACKDEL: alt_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LO(BACKSPACE)>, <&kp LO(DELETE)>;
+            bindings = <&kp LO(BACKSPACE)>, <&kp LO(LEFT)>, <&kp BACKSPACE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 

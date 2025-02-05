@@ -215,7 +215,7 @@ behaviors {
         ALTBACKDEL: alt_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
+            bindings = <&kp LALT(BACKSPACE)>, <&kp LALT(DELETE)>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 

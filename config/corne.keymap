@@ -208,14 +208,14 @@ behaviors {
         BACKDEL: backspace_delete {
           compatible = "zmk,behavior-mod-morph";
           #binding-cells = <0>;
-          bindings = <&kp BACKSPACE>, <&kp RIGHT>, <&kp BACKSPACE>;
+          bindings = <&kp BACKSPACE>, <&kpDELETE>;
           mods = <(MOD_LSFT|MOD_RSFT)>;
-};
+        };
 
         ALTBACKDEL: alt_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LA(BACKSPACE)>, <&kp LA(LEFT)>, <&kp BACKSPACE>;
+            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -3183,7 +3183,7 @@ macros {
                       &kp TAB                         &kp Q                         &kp W                         &kp E                         &kp R   &kp T      &kp Y                          &kp U                          &kp I                          &kp O                             &kp P                      &kp BSLH
                      &kp CAPS  &LeftPinky (A, LAYER_QWERTY)  &LeftRingy (S, LAYER_QWERTY)  &LeftMiddy (D, LAYER_QWERTY)  &LeftIndex (F, LAYER_QWERTY)   &kp G      &kp H  &RightIndex (J, LAYER_QWERTY)  &RightMiddy (K, LAYER_QWERTY)  &RightRingy (L, LAYER_QWERTY)  &RightPinky (SEMI, LAYER_QWERTY)                       &kp SQT
  &sticky_key_modtap LSFT LSFT                         &kp Z                         &kp X                         &kp C                         &kp V   &kp B      &kp N                          &kp M                      &kp COMMA                        &kp DOT                          &kp FSLH  &sticky_key_modtap LSFT LSFT
-                                                                &thumb LAYER_Function ESC &thumb LAYER_Cursor &BACKDEL    &thumb LAYER_Number &ALTBACKDEL                               &mt LSHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB 
+                                                                &thumb LAYER_Function ESC &thumb LAYER_Cursor BACKSPACE    &thumb LAYER_Number LA(BACKSPACE)                               &mt LSHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB 
             >;
             
         };

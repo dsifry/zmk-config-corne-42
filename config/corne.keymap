@@ -7,7 +7,7 @@
 #define ENABLE_MOUSE_KEYS  // requires v24.12-beta or newer firmware
 #define NATURAL_SCROLLING  // supports "natural scrolling" in macOS
 #define OPERATING_SYSTEM 'M' // choose 'L'inux, 'M'acOS, or 'W'indows
-#define DIFFICULTY_LEVEL  3  // 0:custom, 1:easy -> 5:hard (see below)
+#define DIFFICULTY_LEVEL  4  // 0:custom, 1:easy -> 5:hard (see below)
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
 #define SPACE_FORGIVENESS    // allow lingering taps on the space bar
 //#define THUMB_FORGIVENESS  // allow lingering taps on the thumb keys
@@ -190,8 +190,8 @@
 #define KEY_LH_C2R3 V
 #define KEY_LH_C1R3 B
 #define KEY_LH_T1 ESC
-#define KEY_LH_T2 DEL
-#define KEY_LH_T3 BKSP
+#define KEY_LH_T2 BKSP
+#define KEY_LH_T3 LA(BKSP)
 #define KEY_RH_T3 ENTER
 #define KEY_RH_T2 SPACE
 #define KEY_RH_T1 TAB
@@ -662,7 +662,7 @@ behaviors {
                                        30 31 32 33 34 35 
 
   #define THUMB_KEYS          \
-                        36 37 38       39 40 41
+                    36 37 38       39 40 41
 
   #define LEFT_PINKY_KEY  KEY_LH_C5R2
   #define LEFT_RINGY_KEY  KEY_LH_C4R2
@@ -3139,9 +3139,19 @@ macros {
             key-positions = <8 9>;
         };
 
+        curlyopen {
+            bindings = <&kp LS(LBKT)>;
+            key-positions = <31 32>;
+        };
+
+        curlyclose {
+            bindings = <&kp LS(RBKT)>;
+            key-positions = <32 33>;
+        };
+
         myquestion {
             bindings = <&kp QUESTION>;              
-            key-positions = <5 4>;
+            key-positions = <4 5>;
         };
 
         myexclamation {
@@ -3153,6 +3163,22 @@ macros {
             bindings = <&kp MINUS>;
             key-positions = <28 29>;
         };
+        
+        mycolon {
+            bindings = <&kp LS(SEMI)>;              
+            key-positions = <6 7>;
+        };
+
+        myat {
+            bindings = <&kp LS(N2)>;
+            key-positions = <18 19>;
+        };
+
+        mypercent {
+            bindings = <&kp LS(N5)>;
+            key-positions = <30 31>;
+        };
+
 
         
 
@@ -3162,7 +3188,7 @@ macros {
         };
 
         mousingLayer {
-            bindings = <&to LAYER_Mouse >;
+            bindings = <&to LAYER_Mouse>;
             key-positions = <37 40>;
         };
 
@@ -3313,7 +3339,7 @@ macros {
             display-name = "Symbol";
             bindings = <
   &kp EXCL  &kp COMMA   &kp LBRC   &kp RBRC  &kp SEMI  &kp QMARK                                                                        &kp GRAVE             &kp LEFT               &kp UP             &kp DOWN            &kp RIGHT     &kp HOME
-  &kp HASH  &kp CARET  &kp EQUAL  &kp UNDER  &kp DLLR   &kp STAR                                                                          &kp DQT             &kp BSPC              &kp TAB            &kp SPACE              &kp RET      &kp END
+  &kp HASH  &kp CARET  &kp EQUAL     &kp AT  &kp DLLR   &kp STAR                                                                          &kp DQT             &kp BSPC              &kp TAB            &kp SPACE              &kp RET      &kp END
  &kp TILDE     &kp LT   &kp PIPE  &kp MINUS    &kp GT   &kp FSLH                                                                          &kp SQT              &kp DEL          &kp LS(TAB)         &select_word         &select_line  &select_all
                                                                     &kp PRCNT  &kp COLON    &kp AT              &trans   &trans   &trans
             >;

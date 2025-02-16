@@ -2993,7 +2993,7 @@ macros {
   // Scaling for mouse scrolling, based on @caksoylar's example:
   // https://github.com/caksoylar/zmk-config/commit/e35ee2f08788927683df7bbdd7fc73434473886e
   //
-  #include <zephyr/dt-bindings/input/input-event-codes.h>
+  // #include <zephyr/dt-bindings/input/input-event-codes.h>
   / {
     input_processors {
       zip_scroll_scaler: zip_scroll_scaler {

@@ -3352,7 +3352,7 @@ macros {
   &none  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_LEFT    &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT    &kp _C(X)                                                                      &kp _C(X)  &msc MOUSE_SCROLL_LEFT  &msc MOUSE_SCROLL_UP  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_RIGHT     &none
   &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT  &mmv MOVE_DOWN          &mmv MOVE_RIGHT    &kp _C(C)                                                                      &kp _C(C)                  &mo 14                &mo 15                  &mo 16                &kp K_APP     &none
   &none  &msc MOUSE_SCROLL_DOWN                  &mo 14          &mo 15                   &mo 16    &kp _C(V)                                                                      &kp _C(V)          &mmv MOVE_LEFT          &mmv MOVE_UP          &mmv MOVE_DOWN          &mmv MOVE_RIGHT     &none
-                                                                                                              &mkp LCLK  &mkp RCLK  &mkp MB3            &mt LSHFT _C(V) &mkp RCLK &mkp LCLK 
+                                                                    &mt LALT &mkp MB3      &mt LGUI &mkp RCLK        &mt LSHIFT &mkp LCLK                   &mt LSHFT &mkp LCLK    &mt LCTRL &mkp RCLK    &mt LGUI &mkp MB3
             >;
             
         };

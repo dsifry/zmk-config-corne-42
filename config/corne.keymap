@@ -7,7 +7,7 @@
 #define ENABLE_MOUSE_KEYS  // requires v24.12-beta or newer firmware
 #define NATURAL_SCROLLING  // supports "natural scrolling" in macOS
 #define OPERATING_SYSTEM 'M' // choose 'L'inux, 'M'acOS, or 'W'indows
-#define DIFFICULTY_LEVEL  4  // 0:custom, 1:easy -> 5:hard (see below)
+#define DIFFICULTY_LEVEL  5  // 0:custom, 1:easy -> 5:hard (see below)
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
 #define SPACE_FORGIVENESS    // allow lingering taps on the space bar
 //#define THUMB_FORGIVENESS  // allow lingering taps on the thumb keys
@@ -3066,11 +3066,11 @@ macros {
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <13 1>;
+            key-positions = <1 2>;
         };
 
         delete {
-            bindings = <&kp DELETE>;
+            bindings = <&kp LA(DELETE)>;
             key-positions = <17 18>;
         };
 
@@ -3206,10 +3206,10 @@ macros {
         layer_QWERTY {
             display-name = "QWERTY";
             bindings = <
-                      &kp TAB                         &kp Q                         &kp W                         &kp E                         &kp R   &kp T      &kp Y                          &kp U                          &kp I                          &kp O                             &kp P                      &kp BSLH
+                      &kp ESC                         &kp Q                         &kp W                         &kp E                         &kp R   &kp T      &kp Y                          &kp U                          &kp I                          &kp O                             &kp P                      &kp BSLH
                      &kp CAPS  &LeftPinky (A, LAYER_QWERTY)  &LeftRingy (S, LAYER_QWERTY)  &LeftMiddy (D, LAYER_QWERTY)  &LeftIndex (F, LAYER_QWERTY)   &kp G      &kp H  &RightIndex (J, LAYER_QWERTY)  &RightMiddy (K, LAYER_QWERTY)  &RightRingy (L, LAYER_QWERTY)  &RightPinky (SEMI, LAYER_QWERTY)                       &kp SQT
  &sticky_key_modtap LSFT LSFT                         &kp Z                         &kp X                         &kp C                         &kp V   &kp B      &kp N                          &kp M                      &kp COMMA                        &kp DOT                          &kp FSLH  &sticky_key_modtap LSFT LSFT
-                                                                &thumb LAYER_Function ESC &thumb LAYER_Cursor BACKSPACE    &thumb LAYER_Number LA(BACKSPACE)                               &mt LSHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB 
+                                                                &thumb LAYER_Function DEL &thumb LAYER_Cursor BACKSPACE    &thumb LAYER_Number LA(BACKSPACE)                               &mt LSHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB 
             >;
             
         };

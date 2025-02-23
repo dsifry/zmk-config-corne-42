@@ -7,7 +7,7 @@
 #define ENABLE_MOUSE_KEYS  // requires v24.12-beta or newer firmware
 #define NATURAL_SCROLLING  // supports "natural scrolling" in macOS
 #define OPERATING_SYSTEM 'M' // choose 'L'inux, 'M'acOS, or 'W'indows
-#define DIFFICULTY_LEVEL  5  // 0:custom, 1:easy -> 5:hard (see below)
+#define DIFFICULTY_LEVEL  3  // 0:custom, 1:easy -> 5:hard (see below)
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
 #define SPACE_FORGIVENESS    // allow lingering taps on the space bar
 //#define THUMB_FORGIVENESS  // allow lingering taps on the thumb keys
@@ -447,7 +447,7 @@ behaviors {
   #define HOMEY_HOLDING_TIME (TAPPING_RESOLUTION + 90)
   #endif
   #ifndef INDEX_HOLDING_TIME
-  #define INDEX_HOLDING_TIME (TAPPING_RESOLUTION + 20)
+  #define INDEX_HOLDING_TIME (TAPPING_RESOLUTION - 50)
   #endif
   #ifndef MIDDY_HOLDING_TIME
   #define MIDDY_HOLDING_TIME (TAPPING_RESOLUTION + 60)

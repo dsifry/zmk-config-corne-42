@@ -3027,16 +3027,6 @@ macros {
   #define SCRL_LEFT
   #define SCRL_RIGHT
 #endif
-//
-// CapsWord - updated after v0.2 to use newer syntax
-//
-&caps_word {
-  continue-list = <
-    UNDERSCORE MINUS
-    BACKSPACE DELETE
-    N1 N2 N3 N4 N5 N6 N7 N8 N9 N0
-  >;
-};
 /*HACK*//{
 
 };

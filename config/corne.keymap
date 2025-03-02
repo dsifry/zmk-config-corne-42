@@ -2633,7 +2633,7 @@ behaviors {
     quick-release;
     ignore-modifiers;
   };
-
+};
   //////////////////////////////////////////////////////////////////////////
   //
   // ZMK global overrides

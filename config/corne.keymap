@@ -3194,9 +3194,9 @@ macros {
             display-name = "QWERTY";
             bindings = <
                       &kp ESC                         &kp Q                         &kp W                         &kp E                         &kp R   &kp T      &kp Y                          &kp U                          &kp I                          &kp O                             &kp P                      &kp BSLH
-                     &kp CAPS  &LeftPinky (A, LAYER_QWERTY)  &LeftRingy (S, LAYER_QWERTY)  &LeftMiddy (D, LAYER_QWERTY)  &LeftIndex (F, LAYER_QWERTY)   &kp G      &kp H  &RightIndex (J, LAYER_QWERTY)  &RightMiddy (K, LAYER_QWERTY)  &RightRingy (L, LAYER_QWERTY)  &RightPinky (SEMI, LAYER_QWERTY)                       &kp SQT
+                     &caps_word  &LeftPinky (A, LAYER_QWERTY)  &LeftRingy (S, LAYER_QWERTY)  &LeftMiddy (D, LAYER_QWERTY)  &LeftIndex (F, LAYER_QWERTY)   &kp G      &kp H  &RightIndex (J, LAYER_QWERTY)  &RightMiddy (K, LAYER_QWERTY)  &RightRingy (L, LAYER_QWERTY)  &RightPinky (SEMI, LAYER_QWERTY)                       &kp SQT
  &sticky_key_modtap LSFT LSFT                         &kp Z                         &kp X                         &kp C                         &kp V   &kp B      &kp N                          &kp M                      &kp COMMA                        &kp DOT                          &kp FSLH  &sticky_key_modtap LSFT LSFT
-                                                                &thumb LAYER_Function &caps_word &thumb LAYER_Cursor BACKSPACE    &thumb LAYER_Number LA(BACKSPACE)                               &mt LSHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB 
+                                                                &thumb LAYER_Function DEL &thumb LAYER_Cursor BACKSPACE    &thumb LAYER_Number LA(BACKSPACE)                               &mt LSHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB 
             >;
             
         };

@@ -226,13 +226,6 @@ behaviors {
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
 
-//         caps: caps {
-//            compatible = "zmk,behavior-caps-word";
-//            label = "CAPS";
-//            #binding-cells = <0>;
-//            continue-list = <MINUS BACKSPACE>;
-//        };
-
         paraleft: paraleft {
             compatible = "zmk,behavior-mod-morph";
             label = "PARALEFT";
@@ -2647,19 +2640,15 @@ behaviors {
   //////////////////////////////////////////////////////////////////////////
 
   //
-  // CapsWord - ported from Pascal Getreuer's extension for QMK
-  // - https://zmk.dev/docs/behaviors/caps-word
-  // - https://getreuer.info/posts/keyboards/caps-word/index.html
+  // CapsWord - updated after v0.2 to use newer syntax
   //
-//  behavior_caps_word {
-//    continue-list = <
-//      UNDERSCORE MINUS
-//      BACKSPACE DELETE
-//      N1 N2 N3 N4 N5 N6 N7 N8 N9 N0
-//    >;
-//  };
-
-};
+  &caps_word {
+    continue-list = <
+      UNDERSCORE MINUS
+      BACKSPACE DELETE
+      N1 N2 N3 N4 N5 N6 N7 N8 N9 N0
+    >;
+  };
 
 macros {
 

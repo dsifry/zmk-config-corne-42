@@ -202,6 +202,17 @@
 #define KEY_RH_C5R3 FSLH
 #define KEY_RH_C6R3 RSFT
 
+//
+// CapsWord - updated after v0.2 to use newer syntax
+//
+&caps_word {
+  continue-list = <
+    UNDERSCORE MINUS
+    BACKSPACE DELETE
+    N1 N2 N3 N4 N5 N6 N7 N8 N9 N0
+  >;
+};
+
 / {
 behaviors {
 
@@ -253,16 +264,6 @@ behaviors {
             mods = <(MOD_LSFT)>;
         };
 
-  //
-  // CapsWord - updated after v0.2 to use newer syntax
-  //
-  &caps_word {
-    continue-list = <
-      UNDERSCORE MINUS
-      BACKSPACE DELETE
-      N1 N2 N3 N4 N5 N6 N7 N8 N9 N0
-    >;
-  };
   //////////////////////////////////////////////////////////////////////////
   //
   // Miryoku layers and home row mods (ported from my QMK endgame)

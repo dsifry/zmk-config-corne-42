@@ -226,12 +226,12 @@ behaviors {
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
 
-        caps: caps {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS";
-            #binding-cells = <0>;
-            continue-list = <MINUS BACKSPACE>;
-        };
+//         caps: caps {
+//            compatible = "zmk,behavior-caps-word";
+//            label = "CAPS";
+//            #binding-cells = <0>;
+//            continue-list = <MINUS BACKSPACE>;
+//        };
 
         paraleft: paraleft {
             compatible = "zmk,behavior-mod-morph";

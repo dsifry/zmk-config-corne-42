@@ -3330,9 +3330,9 @@ macros {
         layer_Symbol {
             display-name = "Symbol";
             bindings = <
-  &kp EXCL  &kp COMMA   &kp LBRC   &kp RBRC  &kp SEMI  &kp QMARK                                                                        &kp GRAVE             &kp LEFT               &kp UP             &kp DOWN            &kp RIGHT     &kp HOME
-  &kp HASH  &kp CARET  &kp EQUAL     &kp AT  &kp DLLR   &kp STAR                                                                          &kp DQT             &kp BSPC              &kp TAB            &kp SPACE              &kp RET      &kp END
- &kp TILDE     &kp LT   &kp PIPE  &kp MINUS    &kp GT   &kp FSLH                                                                          &kp SQT              &kp DEL          &kp LS(TAB)         &select_word         &select_line  &select_all
+  &kp EXCL  &kp GRAVE   &kp LBRC   &kp RBRC   &kp SEMI  &kp QMARK                                                                        &kp GRAVE           &kp LEFT         &kp UP             &kp DOWN            &kp RIGHT     &kp HOME
+  &kp CARET &kp HASH    &kp EQUAL  &kp AT     &kp DLLR  &kp STAR                                                                         &kp DQT             &kp BSPC         &kp TAB            &kp SPACE           &kp RET       &kp END
+ &kp TILDE     &kp LT   &kp PIPE   &kp MINUS  &kp GT    &kp FSLH                                                                         &kp SQT             &kp DEL          &kp LS(TAB)        &select_word        &select_line  &select_all
                                                                     &kp PRCNT  &kp COLON    &kp AT              &trans   &trans   &trans
             >;
             

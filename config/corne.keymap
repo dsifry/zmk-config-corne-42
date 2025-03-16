@@ -967,6 +967,14 @@ behaviors {
   #define LeftPinky_layer5(key) left_pinky LEFT_PINKY_MOD key
   #define LeftPinky_layer6(key) left_pinky LEFT_PINKY_MOD key
   #define LeftPinky_layer7(key) left_pinky LEFT_PINKY_MOD key
+  #define LeftPinky_layer8(key) left_pinky LEFT_PINKY_MOD key
+  #define LeftPinky_layer9(key) left_pinky LEFT_PINKY_MOD key
+  #define LeftPinky_layer10(key) left_pinky LEFT_PINKY_MOD key
+  #define LeftPinky_layer11(key) left_pinky LEFT_PINKY_MOD key
+  #define LeftPinky_layer12(key) left_pinky LEFT_PINKY_MOD key
+  #define LeftPinky_layer13(key) left_pinky LEFT_PINKY_MOD key
+  #define LeftPinky_layer14(key) left_pinky LEFT_PINKY_MOD key
+  #define LeftPinky_layer15(key) left_pinky LEFT_PINKY_MOD key
   #ifndef RIGHT_PINKY_HOLDING_TYPE
   #define RIGHT_PINKY_HOLDING_TYPE PINKY_HOLDING_TYPE
   #endif
@@ -1064,6 +1072,14 @@ behaviors {
   #define RightPinky_layer5(key) right_pinky RIGHT_PINKY_MOD key
   #define RightPinky_layer6(key) right_pinky RIGHT_PINKY_MOD key
   #define RightPinky_layer7(key) right_pinky RIGHT_PINKY_MOD key
+  #define RightPinky_layer8(key) right_pinky RIGHT_PINKY_MOD key 
+  #define RightPinky_layer9(key) right_pinky RIGHT_PINKY_MOD key
+  #define RightPinky_layer10(key) right_pinky RIGHT_PINKY_MOD key
+  #define RightPinky_layer11(key) right_pinky RIGHT_PINKY_MOD key
+  #define RightPinky_layer12(key) right_pinky RIGHT_PINKY_MOD key
+  #define RightPinky_layer13(key) right_pinky RIGHT_PINKY_MOD key
+  #define RightPinky_layer14(key) right_pinky RIGHT_PINKY_MOD key
+  #define RightPinky_layer15(key) right_pinky RIGHT_PINKY_MOD key
   #ifndef LEFT_RINGY_HOLDING_TYPE
   #define LEFT_RINGY_HOLDING_TYPE RINGY_HOLDING_TYPE
   #endif
@@ -1161,6 +1177,14 @@ behaviors {
   #define LeftRingy_layer5(key) left_ringy LEFT_RINGY_MOD key
   #define LeftRingy_layer6(key) left_ringy LEFT_RINGY_MOD key
   #define LeftRingy_layer7(key) left_ringy LEFT_RINGY_MOD key
+  #define LeftRingy_layer8(key) left_ringy LEFT_RINGY_MOD key
+  #define LeftRingy_layer9(key) left_ringy LEFT_RINGY_MOD key
+  #define LeftRingy_layer10(key) left_ringy LEFT_RINGY_MOD key
+  #define LeftRingy_layer11(key) left_ringy LEFT_RINGY_MOD key
+  #define LeftRingy_layer12(key) left_ringy LEFT_RINGY_MOD key
+  #define LeftRingy_layer13(key) left_ringy LEFT_RINGY_MOD key
+  #define LeftRingy_layer14(key) left_ringy LEFT_RINGY_MOD key
+  #define LeftRingy_layer15(key) left_ringy LEFT_RINGY_MOD key
   #ifndef RIGHT_RINGY_HOLDING_TYPE
   #define RIGHT_RINGY_HOLDING_TYPE RINGY_HOLDING_TYPE
   #endif
@@ -1258,6 +1282,14 @@ behaviors {
   #define RightRingy_layer5(key) right_ringy RIGHT_RINGY_MOD key
   #define RightRingy_layer6(key) right_ringy RIGHT_RINGY_MOD key
   #define RightRingy_layer7(key) right_ringy RIGHT_RINGY_MOD key
+  #define RightRingy_layer8(key) right_ringy RIGHT_RINGY_MOD key
+  #define RightRingy_layer9(key) right_ringy RIGHT_RINGY_MOD key
+  #define RightRingy_layer10(key) right_ringy RIGHT_RINGY_MOD key
+  #define RightRingy_layer11(key) right_ringy RIGHT_RINGY_MOD key
+  #define RightRingy_layer12(key) right_ringy RIGHT_RINGY_MOD key
+  #define RightRingy_layer13(key) right_ringy RIGHT_RINGY_MOD key
+  #define RightRingy_layer14(key) right_ringy RIGHT_RINGY_MOD key
+  #define RightRingy_layer15(key) right_ringy RIGHT_RINGY_MOD key
   #ifndef LEFT_MIDDY_HOLDING_TYPE
   #define LEFT_MIDDY_HOLDING_TYPE MIDDY_HOLDING_TYPE
   #endif
@@ -1355,6 +1387,14 @@ behaviors {
   #define LeftMiddy_layer5(key) left_middy LEFT_MIDDY_MOD key
   #define LeftMiddy_layer6(key) left_middy LEFT_MIDDY_MOD key
   #define LeftMiddy_layer7(key) left_middy LEFT_MIDDY_MOD key
+  #define LeftMiddy_layer8(key) left_middy LEFT_MIDDY_MOD key
+  #define LeftMiddy_layer9(key) left_middy LEFT_MIDDY_MOD key
+  #define LeftMiddy_layer10(key) left_middy LEFT_MIDDY_MOD key
+  #define LeftMiddy_layer11(key) left_middy LEFT_MIDDY_MOD key
+  #define LeftMiddy_layer12(key) left_middy LEFT_MIDDY_MOD key
+  #define LeftMiddy_layer13(key) left_middy LEFT_MIDDY_MOD key
+  #define LeftMiddy_layer14(key) left_middy LEFT_MIDDY_MOD key
+  #define LeftMiddy_layer15(key) left_middy LEFT_MIDDY_MOD key
   #ifndef RIGHT_MIDDY_HOLDING_TYPE
   #define RIGHT_MIDDY_HOLDING_TYPE MIDDY_HOLDING_TYPE
   #endif
@@ -1452,6 +1492,14 @@ behaviors {
   #define RightMiddy_layer5(key) right_middy RIGHT_MIDDY_MOD key
   #define RightMiddy_layer6(key) right_middy RIGHT_MIDDY_MOD key
   #define RightMiddy_layer7(key) right_middy RIGHT_MIDDY_MOD key
+  #define RightMiddy_layer8(key) right_middy RIGHT_MIDDY_MOD key
+  #define RightMiddy_layer9(key) right_middy RIGHT_MIDDY_MOD key
+  #define RightMiddy_layer10(key) right_middy RIGHT_MIDDY_MOD key
+  #define RightMiddy_layer11(key) right_middy RIGHT_MIDDY_MOD key
+  #define RightMiddy_layer12(key) right_middy RIGHT_MIDDY_MOD key
+  #define RightMiddy_layer13(key) right_middy RIGHT_MIDDY_MOD key
+  #define RightMiddy_layer14(key) right_middy RIGHT_MIDDY_MOD key
+  #define RightMiddy_layer15(key) right_middy RIGHT_MIDDY_MOD key
   #ifndef LEFT_INDEX_HOLDING_TYPE
   #define LEFT_INDEX_HOLDING_TYPE INDEX_HOLDING_TYPE
   #endif
@@ -1549,6 +1597,14 @@ behaviors {
   #define LeftIndex_layer5(key) left_index LEFT_INDEX_MOD key
   #define LeftIndex_layer6(key) left_index LEFT_INDEX_MOD key
   #define LeftIndex_layer7(key) left_index LEFT_INDEX_MOD key
+  #define LeftIndex_layer8(key) left_index LEFT_INDEX_MOD key
+  #define LeftIndex_layer9(key) left_index LEFT_INDEX_MOD key
+  #define LeftIndex_layer10(key) left_index LEFT_INDEX_MOD key
+  #define LeftIndex_layer11(key) left_index LEFT_INDEX_MOD key
+  #define LeftIndex_layer12(key) left_index LEFT_INDEX_MOD key
+  #define LeftIndex_layer13(key) left_index LEFT_INDEX_MOD key
+  #define LeftIndex_layer14(key) left_index LEFT_INDEX_MOD key
+  #define LeftIndex_layer15(key) left_index LEFT_INDEX_MOD key
   #ifndef RIGHT_INDEX_HOLDING_TYPE
   #define RIGHT_INDEX_HOLDING_TYPE INDEX_HOLDING_TYPE
   #endif

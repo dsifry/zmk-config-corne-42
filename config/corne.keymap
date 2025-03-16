@@ -1646,6 +1646,14 @@ behaviors {
   #define RightIndex_layer5(key) right_index RIGHT_INDEX_MOD key
   #define RightIndex_layer6(key) right_index RIGHT_INDEX_MOD key
   #define RightIndex_layer7(key) right_index RIGHT_INDEX_MOD key
+  #define RightIndex_layer8(key) right_index RIGHT_INDEX_MOD key
+  #define RightIndex_layer9(key) right_index RIGHT_INDEX_MOD key
+  #define RightIndex_layer10(key) right_index RIGHT_INDEX_MOD key
+  #define RightIndex_layer11(key) right_index RIGHT_INDEX_MOD key
+  #define RightIndex_layer12(key) right_index RIGHT_INDEX_MOD key
+  #define RightIndex_layer13(key) right_index RIGHT_INDEX_MOD key
+  #define RightIndex_layer14(key) right_index RIGHT_INDEX_MOD key
+  #define RightIndex_layer15(key) right_index RIGHT_INDEX_MOD key
   #ifndef LEFT_RINGY_PINKY_HOLDING_TYPE
   #define LEFT_RINGY_PINKY_HOLDING_TYPE LEFT_RINGY_CHORD_HOLDING_TYPE
   #endif

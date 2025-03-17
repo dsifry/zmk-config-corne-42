@@ -261,6 +261,14 @@ behaviors {
             mods = <(MOD_LSFT)>;
         };
 
+        gravetilde: gravetilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVETILDE";
+            bindings = <&kp GRAVE>, <&kp TILDE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
   //////////////////////////////////////////////////////////////////////////
   //
   // Miryoku layers and home row mods (ported from my QMK endgame)
@@ -3120,8 +3128,8 @@ macros {
             key-positions = <0 1>;
         };
 
-        myat {
-            bindings = <&kp AT>;
+        grave-tilde {
+            bindings = <gravetilde>;
             key-positions = <1 2>;
         };
 

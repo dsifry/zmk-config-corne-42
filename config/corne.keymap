@@ -3223,8 +3223,8 @@ macros {
             key-positions = <28 29>;
         };
         
-        mypercent {
-            bindings = <&kp LS(N5)>;
+        myquote {
+            bindings = <&kp SQT>;
             key-positions = <30 31>;
         };
 
@@ -3402,10 +3402,10 @@ macros {
         layer_Symbol {
             display-name = "Symbol";
             bindings = <
-  &kp EXCL  &kp GRAVE   &kp LBRC   &kp RBRC   &kp SEMI  &kp QMARK                                                                        &kp GRAVE           &kp LEFT         &kp UP             &kp DOWN            &kp RIGHT     &kp HOME
-  &kp CARET &kp HASH    &kp EQUAL  &kp AT     &kp DLLR  &kp STAR                                                                         &kp DQT             &RightIndex (BSPC, LAYER_Symbol)  &RightMiddy (TAB, LAYER_Symbol)  &RightRingy (SPACE, LAYER_Symbol)  &RightPinky (RET, LAYER_Symbol)     &kp END
- &kp TILDE     &kp LT   &kp PIPE   &kp MINUS  &kp GT    &kp FSLH                                                                         &kp SQT             &kp DEL          &kp LS(TAB)        &select_word        &select_line  &select_all
-                                                                    &kp PRCNT  &kp COLON    &kp AT              &trans   &trans   &trans
+  &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp N4  &kp N5                                                                        &kp GRAVE           &kp LEFT         &kp UP             &kp DOWN            &kp RIGHT     &kp HOME
+  &kp EQUAL &kp N6    &kp N7  &kp N8     &kp N9  &kp N0                                                                       &kp DEL             &RightIndex (BSPC, LAYER_Symbol)  &RightMiddy (TAB, LAYER_Symbol)  &RightRingy (SPACE, LAYER_Symbol)  &RightPinky (RET, LAYER_Symbol)     &kp END
+ &kp LSFT   &kp COMMA   &kp DOT  &kp LBRC   &kp RBRC &kp FSLH                                                                          &kp SQT     &kp DQT             &select_word        &select_line  &select_all
+                                                                    &kp POUND  &kp COLON    &kp AT              &trans   &trans   &trans
             >;
             
         };

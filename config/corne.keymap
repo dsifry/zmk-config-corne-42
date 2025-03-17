@@ -3120,39 +3120,74 @@ macros {
             key-positions = <1 2>;
         };
 
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <2 3>;
+        };
+
+        perc {
+            bindings = <&kp PERCENT>;
+            key-positions = <3 4>;
+        };
+
+        myquestion {
+            bindings = <&kp QUESTION>;              
+            key-positions = <4 5>;
+        };
+
+        mycolon {
+            bindings = <&kp LS(SEMI)>;              
+            key-positions = <6 7>;
+        };
+
+        bracket-less {
+            bindings = <&kp LBKT>;
+            key-positions = <7 8>;
+        };
+
+        bracket-great {
+            bindings = <&kp RBKT>;
+            key-positions = <8 9>;
+        };
+
+        mybackslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <13 14>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <14 15>;
+        };
+
+        pound {
+            bindings = <&kp POUND>;
+            key-positions = <15 16>;
+        };
+
+        myexclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <16 17>;
+        };
+
         delete {
             bindings = <&kp LA(DELETE)>;
             key-positions = <17 18>;
         };
 
-        perc {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
+        myat {
+            bindings = <&kp LS(N2)>;
+            key-positions = <18 19>;
         };
 
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <28 16>;
+        para-less {
+            bindings = <&paraless>;
+            key-positions = <19 20>;
         };
 
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-        };
-
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <3 15>;
-        };
-
-        at {
-            bindings = <&kp AT>;
-            key-positions = <2 14>;
-        };
-
-        mybackslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <26 14>;
+        para-great {
+            bindings = <&paragreat>;
+            key-positions = <20 21>;
         };
 
         cut {
@@ -3170,24 +3205,14 @@ macros {
             key-positions = <27 28>;
         };
 
-        para-less {
-            bindings = <&paraless>;
-            key-positions = <19 20>;
+        myminus {
+            bindings = <&kp MINUS>;
+            key-positions = <28 29>;
         };
-
-        para-great {
-            bindings = <&paragreat>;
-            key-positions = <20 21>;
-        };
-
-        bracket-less {
-            bindings = <&kp LBKT>;
-            key-positions = <7 8>;
-        };
-
-        bracket-great {
-            bindings = <&kp RBKT>;
-            key-positions = <8 9>;
+        
+        mypercent {
+            bindings = <&kp LS(N5)>;
+            key-positions = <30 31>;
         };
 
         curlyopen {
@@ -3198,36 +3223,6 @@ macros {
         curlyclose {
             bindings = <&kp LS(RBKT)>;
             key-positions = <32 33>;
-        };
-
-        myquestion {
-            bindings = <&kp QUESTION>;              
-            key-positions = <4 5>;
-        };
-
-        myexclamation {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <16 17>;
-        };
-
-        myminus {
-            bindings = <&kp MINUS>;
-            key-positions = <28 29>;
-        };
-        
-        mycolon {
-            bindings = <&kp LS(SEMI)>;              
-            key-positions = <6 7>;
-        };
-
-        myat {
-            bindings = <&kp LS(N2)>;
-            key-positions = <18 19>;
-        };
-
-        mypercent {
-            bindings = <&kp LS(N5)>;
-            key-positions = <30 31>;
         };
 
         myunderline {

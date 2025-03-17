@@ -3117,10 +3117,15 @@ macros {
 
         escape {
             bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        myat {
+            bindings = <&kp AT>;
             key-positions = <1 2>;
         };
 
-        equal {
+        myequals {
             bindings = <&kp EQUAL>;
             key-positions = <2 3>;
         };

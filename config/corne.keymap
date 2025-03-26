@@ -3122,12 +3122,6 @@ macros {
   #define COMBO_FIRING_DECAY 50
   #endif
  
-
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
-        };
-
         grave-tilde {
             bindings = <&gravetilde>;
             key-positions = <1 2>;
@@ -3243,6 +3237,36 @@ macros {
             key-positions = <33 34>;
         };
 
+        lcontrol {
+            bindings = <&kp LCTL>;
+            key-positions = <0 1>;
+        };
+
+        lalt {
+            bindings = <&kp LALT>;
+            key-positions = <12 13>;
+        };
+ 
+        lcommand {
+            bindings = <&kp LGUI>;
+            key-positions = <24 25>;
+        };
+
+        rcontrol {
+            bindings = <&kp RCTL>;
+            key-positions = <10 11>;
+        };
+        
+        ralt {
+            bindings = <&kp LALT>;
+            key-positions = <22 23>;
+        };
+
+        rcommand {
+            bindings = <&kp LGUI>;
+            key-positions = <34 35>;
+        };
+    
 
         
 
@@ -3369,9 +3393,9 @@ macros {
         layer_Cursor {
             display-name = "Cursor";
             bindings = <
- &kp _C(K)           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC          &kp _C(X)                                                         &kp _C(X)   &kp BSPC       &kp _UNDO       &kp _REDO  &sk LSHFT    &kp _C(K)
- &kp _C(L)  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD          &kp _C(C)                                                         &kp _C(C)   &kp LEFT          &kp UP        &kp DOWN  &kp RIGHT    &kp _C(L)
- &kp _C(I)         &select_all        &select_line        &select_word        &extend_word_right    &kp _C(V)                                                         &kp _C(V)   &kp HOME       &kp PG_UP       &kp PG_DN    &kp END    &kp _C(I)
+ &kp LALT           &kp LCTL           &kp _REDO           &kp _UNDO            &kp BSPC          &kp _C(X)                                                         &kp _C(X)   &kp BSPC       &kp _UNDO       &kp _REDO  &sk LSHFT    &kp _C(K)
+ &kp LGUI  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD          &kp _C(C)                                                         &kp _C(C)   &kp LEFT          &kp UP        &kp DOWN  &kp RIGHT    &kp _C(L)
+ &sk LSHIFT         &select_all        &select_line        &select_word        &extend_word_right    &kp _C(V)                                                         &kp _C(V)   &kp HOME       &kp PG_UP       &kp PG_DN    &kp END    &kp _C(I)
                                                                                                            &trans  &trans  &trans  &trans  &trans  &trans                 
             >;
             
@@ -3404,7 +3428,7 @@ macros {
             bindings = <
   &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp N4  &kp N5                                                                        &kp GRAVE           &kp LEFT         &kp UP             &kp DOWN            &kp RIGHT     &kp HOME
   &kp EQUAL &kp N6    &kp N7  &kp N8     &kp N9  &kp N0                                                                       &kp DEL             &RightIndex (BSPC, LAYER_Symbol)  &RightMiddy (TAB, LAYER_Symbol)  &RightRingy (SPACE, LAYER_Symbol)  &RightPinky (RET, LAYER_Symbol)     &kp END
- &kp LSFT   &kp COMMA   &kp DOT  &kp LBRC   &kp RBRC &kp FSLH                                                                          &kp SQT     &kp DQT             &select_word        &select_line  &select_all
+ &kp LSFT   &kp COMMA   &kp DOT  &kp LBRC   &kp RBRC &kp FSLH                                                                          &kp SQT     &kp DQT             &select_word        &select_line  &select_all  &kp RSHIFT
                                                                     &kp POUND  &kp COLON    &kp AT              &trans   &trans   &trans
             >;
             

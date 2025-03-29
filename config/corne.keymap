@@ -3258,12 +3258,12 @@ macros {
         };
         
         ralt {
-            bindings = <&kp LALT>;
+            bindings = <&kp RALT>;
             key-positions = <22 23>;
         };
 
         rcommand {
-            bindings = <&kp LGUI>;
+            bindings = <&kp RGUI>;
             key-positions = <34 35>;
         };
     
@@ -3296,7 +3296,7 @@ macros {
             bindings = <
                       &kp ESC                         &kp Q                         &kp W                         &kp E                         &kp R   &kp T      &kp Y                          &kp U                          &kp I                          &kp O                             &kp P                      &kp BSLH
                      &caps_word  &LeftPinky (A, LAYER_QWERTY)  &LeftRingy (S, LAYER_QWERTY)  &LeftMiddy (D, LAYER_QWERTY)  &LeftIndex (F, LAYER_QWERTY)   &kp G      &kp H  &RightIndex (J, LAYER_QWERTY)  &RightMiddy (K, LAYER_QWERTY)  &RightRingy (L, LAYER_QWERTY)  &RightPinky (SEMI, LAYER_QWERTY)                       &kp SQT
- &sticky_key_modtap LSFT LSFT                         &kp Z                         &kp X                         &kp C                         &kp V   &kp B      &kp N                          &kp M                      &kp COMMA                        &kp DOT                          &kp FSLH  &sticky_key_modtap LSFT LSFT
+ &sticky_key_modtap LSFT LSFT                         &kp Z                         &kp X                         &kp C                         &kp V   &kp B      &kp N                          &kp M                      &kp COMMA                        &kp DOT                          &kp FSLH  &sticky_key_modtap RSFT RSFT
                                                                 &thumb LAYER_Function DEL &thumb LAYER_Cursor BACKSPACE    &thumb LAYER_Number LA(BACKSPACE)                               &mt LSHIFT ENTER      &thumb LAYER_Symbol SPACE         &thumb LAYER_Lower TAB 
             >;
             

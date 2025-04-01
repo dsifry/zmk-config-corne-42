@@ -3198,7 +3198,7 @@ macros {
         };
 
         mybacktick {
-            bindings = <&kp BACKTICK>;
+            bindings = <&kp GRAVE>;
             key-positions = <21 22>;
         };
         

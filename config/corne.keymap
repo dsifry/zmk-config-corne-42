@@ -3157,9 +3157,9 @@ macros {
             key-positions = <8 9>;
         };
 
-        mybackslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <13 14>;
+        mypipe {
+            bindings = <&kp PIPE>;
+            key-positions = <9 10>;
         };
 
         dollar {
@@ -3197,6 +3197,11 @@ macros {
             key-positions = <20 21>;
         };
 
+        mybacktick {
+            bindings = <&kp BACKTICK>;
+            key-positions = <21 22>;
+        };
+        
         cut {
             bindings = <&kp LG(X)>;
             key-positions = <25 26>;

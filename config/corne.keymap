@@ -7,9 +7,9 @@
 #define ENABLE_MOUSE_KEYS  // requires v24.12-beta or newer firmware
 #define NATURAL_SCROLLING  // supports "natural scrolling" in macOS
 #define OPERATING_SYSTEM 'M' // choose 'L'inux, 'M'acOS, or 'W'indows
-#define DIFFICULTY_LEVEL  3  // 0:custom, 1:easy -> 5:hard (see below)
+#define DIFFICULTY_LEVEL  0  // 0:custom, 1:easy -> 5:hard (see below)
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
-#define SPACE_FORGIVENESS    // allow lingering taps on the space bar
+//#define SPACE_FORGIVENESS    // allow lingering taps on the space bar
 //#define THUMB_FORGIVENESS  // allow lingering taps on the thumb keys
 //#define SHIFT_FORGIVENESS  // requires v24.08-beta or newer firmware
 //#define WORLD_USE_COMPOSE    // use native Compose in place of Unicode
@@ -3197,8 +3197,8 @@ macros {
             key-positions = <20 21>;
         };
 
-        mybacktick {
-            bindings = <&kp GRAVE>;
+        mybackslash {
+            bindings = <&kp BSLH>;
             key-positions = <21 22>;
         };
         

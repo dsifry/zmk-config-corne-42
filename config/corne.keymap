@@ -7,7 +7,7 @@
 #define ENABLE_MOUSE_KEYS  // requires v24.12-beta or newer firmware
 #define NATURAL_SCROLLING  // supports "natural scrolling" in macOS
 #define OPERATING_SYSTEM 'M' // choose 'L'inux, 'M'acOS, or 'W'indows
-#define DIFFICULTY_LEVEL  0  // 0:custom, 1:easy -> 5:hard (see below)
+
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
 #define SPACE_FORGIVENESS    // allow lingering taps on the space bar
 #define THUMB_FORGIVENESS  // allow lingering taps on the thumb keys
@@ -15,6 +15,43 @@
 //#define WORLD_USE_COMPOSE    // use native Compose in place of Unicode
 //#define WORLD_HOST_AZERTY  // host computer is set to AZERTY locale
 //#define WORLD_SHIFT_NUMBER // apply Shift to type number row digits
+
+#define DIFFICULTY_LEVEL  0  // 0:custom, 1:easy -> 5:hard (see below)
+// === Base Resolution ===
+#define TAPPING_RESOLUTION 200 // most tap durations fall <185ms; safe margin
+
+// === Tap vs Hold Timing Thresholds ===
+#define HOMEY_HOLDING_TIME (TAPPING_RESOLUTION + 90)   // 290ms (mod-clicks)
+#define INDEX_HOLDING_TIME (TAPPING_RESOLUTION + 20)   // 220ms (used for 'f', 'j' Shift)
+#define MIDDY_HOLDING_TIME (TAPPING_RESOLUTION + 60)   // 260ms
+#define RINGY_HOLDING_TIME (TAPPING_RESOLUTION + 90)   // 290ms
+#define PINKY_HOLDING_TIME (TAPPING_RESOLUTION + 110)  // 310ms
+
+// === Modifier Streak + Repeat Handling ===
+#define HOMEY_STREAK_DECAY TAPPING_RESOLUTION          // 200ms
+#define HOMEY_REPEAT_DECAY (TAPPING_RESOLUTION + 150)  // 350ms
+
+#define CHORD_HOLDING_TIME TAPPING_RESOLUTION          // 200ms
+#define CHORD_STREAK_DECAY HOMEY_STREAK_DECAY          // 200ms
+#define CHORD_REPEAT_DECAY HOMEY_REPEAT_DECAY          // 350ms
+
+#define INDEX_HOLDING_TYPE "tap-preferred"             // Faster Shift recognition
+#define INDEX_STREAK_DECAY (TAPPING_RESOLUTION - 50)   // 150ms
+#define INDEX_REPEAT_DECAY (TAPPING_RESOLUTION + 150)  // 350ms
+
+#define PLAIN_HOLDING_TYPE INDEX_HOLDING_TYPE
+#define PLAIN_HOLDING_TIME (TAPPING_RESOLUTION + 50)   // 250ms
+#define PLAIN_STREAK_DECAY HOMEY_STREAK_DECAY
+#define PLAIN_REPEAT_DECAY (TAPPING_RESOLUTION + 150)  // 350ms
+
+#define THUMB_HOLDING_TYPE "balanced"
+#define THUMB_HOLDING_TIME (TAPPING_RESOLUTION + 50)   // 250ms
+#define THUMB_REPEAT_DECAY (TAPPING_RESOLUTION + 150)  // 350ms
+
+#define SPACE_HOLDING_TYPE THUMB_HOLDING_TYPE
+#define SPACE_HOLDING_TIME (TAPPING_RESOLUTION + 20)   // 220ms
+#define SPACE_REPEAT_DECAY TAPPING_RESOLUTION          // 200ms
+
 // TIP: Add more setting overrides here instead of editing them below.
 
 //////////////////////////////////////////////////////////////////////////////
